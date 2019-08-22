@@ -1,7 +1,8 @@
 import Typography from 'typography';
-import fairyGateTheme from 'typography-theme-fairy-gates';
+import theme from 'typography-theme-fairy-gates';
 
-const typography = new Typography(fairyGateTheme);
+theme.bodyFontFamily = ['Source Sans Pro', 'sans-serif'];
+const typography = new Typography(theme);
 
 export const { scale, rhythm, options } = typography;
 export default typography;
