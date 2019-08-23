@@ -1,7 +1,8 @@
 ---
 title: 'Variablen und Konstanten'
-date: '2019-08-22'
 ---
+
+import Quiz from "../components/quiz"
 
 Statt `var` verwenden wir nur noch `let` (für Variable) und `const` (für Konstanten).
 
@@ -9,3 +10,5 @@ Statt `var` verwenden wir nur noch `let` (für Variable) und `const` (für Konst
 const x = 123;
 let foo = 'Bar';
 ```
+
+<Quiz/>

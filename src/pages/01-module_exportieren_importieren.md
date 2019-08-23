@@ -1,6 +1,5 @@
 ---
 title: 'Module exportieren und importieren'
-date: '2019-08-22'
 ---
 
 Seit der JavaScript-Version ES2015 (ES6) gibt es ein offizielles, direkt in JavaScript enthaltenes Modulkonzept, mit dem Code aus anderen Dateien und Bibliotheken strukturiert wiederverwendet werden kann.

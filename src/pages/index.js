@@ -5,14 +5,10 @@ import Layout from '../components/layout';
 export default ({ data }) => {
   return (
     <Layout>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
+      {data.allMdx.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>
-            <h3>
-              {node.frontmatter.title}{' '}
-              <span>&mdash; {node.frontmatter.date}</span>
-            </h3>
-            <p>{node.excerpt}</p>
+            <h3>{node.frontmatter.title}</h3>
           </Link>
         </div>
       ))}
@@ -22,18 +18,15 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: fileAbsolutePath, order: ASC }) {
+    allMdx(sort: { fields: fileAbsolutePath, order: ASC }) {
       edges {
         node {
-          id
           frontmatter {
             title
-            date(formatString: "DD. MMMM YYYY")
           }
           fields {
             slug
           }
-          excerpt
         }
       }
     }
