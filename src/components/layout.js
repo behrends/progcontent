@@ -9,7 +9,7 @@ export default ({ children }) => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>JavaScript für React</title>
-      <link rel="canonical" href="http://mysite.com/example" />
+      <link rel="canonical" href="https://js-fuer-react.netlify.com/" />
     </Helmet>
     <Link to="/">Inhalt</Link>
     {children}
