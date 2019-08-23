@@ -8,8 +8,8 @@ export default ({ children }) => (
   <div style={{ margin: `3rem auto`, maxWidth: 740, padding: `0 1rem` }}>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>JavaScript für React</title>
-      <link rel="canonical" href="https://js-fuer-react.netlify.com/" />
+      <title>Gestalt Prog</title>
+      <link rel="canonical" href="https://gestaltprog.netlify.com/" />
     </Helmet>
     <Link to="/">Inhalt</Link>
     {children}
