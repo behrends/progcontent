@@ -20,6 +20,9 @@ exports.createPages = async ({ graphql, actions }) => {
       allMarkdownRemark {
         edges {
           node {
+            frontmatter {
+              title
+            }
             fields {
               slug
             }
@@ -29,14 +32,30 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  function getNextAndPrevNodes(idx, docs) {
+    const nextNode = idx === docs.length - 1 ? null : docs[idx + 1].node;
+    const prevNode = idx === 0 ? null : docs[idx - 1].node;
+    const next = nextNode && {
+      title: nextNode.frontmatter.title,
+      link: nextNode.fields.slug
+    };
+    const prev = prevNode && {
+      title: prevNode.frontmatter.title,
+      link: prevNode.fields.slug
+    };
+    return { next, prev };
+  }
+
+  result.data.allMarkdownRemark.edges.forEach(({ node }, idx, docs) => {
+    const nextAndPrev = getNextAndPrevNodes(idx, docs);
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/markdown-unit.js`),
       context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
-        slug: node.fields.slug
+        // Passed as props to the component as this.props.pageContext
+        // as well as to the GraphQL page query as graphql arguments
+        slug: node.fields.slug,
+        ...nextAndPrev
       }
     });
   });
