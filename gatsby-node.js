@@ -4,7 +4,9 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
+    let slug = createFilePath({ node, getNode, basePath: `pages` });
+    // remove digits and dash at start of slug, e.g. /08-foo/ becomes /foo/
+    slug = slug.replace(/\d+-/, '');
     createNodeField({
       node,
       name: `slug`,
@@ -17,7 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: fileAbsolutePath, order: ASC }) {
         edges {
           node {
             frontmatter {
