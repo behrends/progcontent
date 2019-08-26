@@ -8,8 +8,8 @@ export default ({ children }) => (
   <div style={{ margin: `3rem auto`, maxWidth: 740, padding: `0 1rem` }}>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Gestalt Prog</title>
-      <link rel="canonical" href="https://gestaltprog.netlify.com/" />
+      <title>Prog Platform</title>
+      <link rel="canonical" href="https://prog-platform.netlify.com/" />
     </Helmet>
     <Link to="/">HOME</Link>
     {children}
