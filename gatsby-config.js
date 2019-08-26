@@ -19,17 +19,6 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {}
-          }
-        ]
-      }
-    },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -47,7 +36,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [`.mdx`, `.md`]
+        extensions: [`.mdx`, `.md`],
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {}
+          }
+        ]
       }
     }
   ]
