@@ -5,7 +5,7 @@ export default ({ path }) => {
   const coursePath = '/src/pages' + path;
   const data = useStaticQuery(graphql`
     query {
-      allMdx(
+      allMarkdownRemark(
         filter: { frontmatter: { templateKey: { eq: "markdown-unit" } } }
         sort: { fields: fileAbsolutePath, order: ASC }
       ) {
@@ -29,7 +29,7 @@ export default ({ path }) => {
   // https://github.com/gatsbyjs/gatsby/issues/10482
   return (
     <ul>
-      {data.allMdx.edges
+      {data.allMarkdownRemark.edges
         .filter(
           ({ node }) => node.fileAbsolutePath.indexOf(coursePath) !== -1
         )

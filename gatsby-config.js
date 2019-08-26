@@ -7,9 +7,8 @@
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        extensions: [`.mdx`, `.md`],
         plugins: [
           {
             resolve: `gatsby-remark-prismjs`,

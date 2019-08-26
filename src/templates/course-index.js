@@ -1,17 +1,16 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import UnitList from '../components/unit-list';
 
-export default ({ data: { mdx } }) => {
+export default ({ data: { markdownRemark } }) => {
   return (
     <Layout>
       <div>
-        <h1>{mdx.frontmatter.title}</h1>
-        <h2>{mdx.frontmatter.description}</h2>
-        <MDXRenderer>{mdx.body}</MDXRenderer>
-        <UnitList path={mdx.fields.slug} />
+        <h1>{markdownRemark.frontmatter.title}</h1>
+        <h2>{markdownRemark.frontmatter.description}</h2>
+        <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+        <UnitList path={markdownRemark.fields.slug} />
       </div>
     </Layout>
   );
@@ -19,7 +18,7 @@ export default ({ data: { mdx } }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
         description
@@ -27,7 +26,7 @@ export const query = graphql`
       fields {
         slug
       }
-      body
+      html
     }
   }
 `;
