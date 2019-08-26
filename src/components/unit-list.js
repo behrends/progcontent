@@ -35,9 +35,7 @@ export default ({ path }) => {
         )
         .map(({ node }) => (
           <li key={node.id}>
-            <Link to={node.fields.slug}>
-              <h3>{node.frontmatter.title}</h3>
-            </Link>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
           </li>
         ))}
     </ul>
