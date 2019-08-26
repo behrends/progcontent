@@ -35,22 +35,35 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  function getNextAndPrevNodes(idx, docs) {
+  function getNextAndPrevNodes(node, idx, docs) {
     const nextNode = idx === docs.length - 1 ? null : docs[idx + 1].node;
     const prevNode = idx === 0 ? null : docs[idx - 1].node;
-    const next = nextNode && {
-      title: nextNode.frontmatter.title,
-      link: nextNode.fields.slug
-    };
-    const prev = prevNode && {
-      title: prevNode.frontmatter.title,
-      link: prevNode.fields.slug
-    };
+    // only add prev and next node to nodes with same template (in same course)
+    let next = null,
+      prev = null;
+    if (
+      nextNode &&
+      nextNode.frontmatter.templateKey === node.frontmatter.templateKey
+    ) {
+      next = {
+        title: nextNode.frontmatter.title,
+        link: nextNode.fields.slug
+      };
+    }
+    if (
+      prevNode &&
+      prevNode.frontmatter.templateKey === node.frontmatter.templateKey
+    ) {
+      prev = {
+        title: prevNode.frontmatter.title,
+        link: prevNode.fields.slug
+      };
+    }
     return { next, prev };
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }, idx, docs) => {
-    let nextAndPrev = getNextAndPrevNodes(idx, docs);
+    let nextAndPrev = getNextAndPrevNodes(node, idx, docs);
     createPage({
       path: node.fields.slug,
       component: path.resolve(
