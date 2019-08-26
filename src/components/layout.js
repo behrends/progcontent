@@ -11,7 +11,7 @@ export default ({ children }) => (
       <title>Gestalt Prog</title>
       <link rel="canonical" href="https://gestaltprog.netlify.com/" />
     </Helmet>
-    <Link to="/">Inhalt</Link>
+    <Link to="/">HOME</Link>
     {children}
   </div>
 );

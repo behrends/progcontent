@@ -9,6 +9,7 @@ export default ({ data }) => {
         <div key={node.id}>
           <Link to={node.fields.slug}>
             <h3>{node.frontmatter.title}</h3>
+            <p>{node.frontmatter.description}</p>
           </Link>
         </div>
       ))}
@@ -18,11 +19,15 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMdx(sort: { fields: fileAbsolutePath, order: ASC }) {
+    allMdx(
+      filter: { frontmatter: { templateKey: { eq: "course-index" } } }
+    ) {
       edges {
         node {
+          id
           frontmatter {
             title
+            description
           }
           fields {
             slug

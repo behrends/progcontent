@@ -23,6 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             frontmatter {
+              templateKey
               title
             }
             fields {
@@ -49,10 +50,12 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   result.data.allMdx.edges.forEach(({ node }, idx, docs) => {
-    const nextAndPrev = getNextAndPrevNodes(idx, docs);
+    let nextAndPrev = getNextAndPrevNodes(idx, docs);
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/markdown-unit.js`),
+      component: path.resolve(
+        `src/templates/${String(node.frontmatter.templateKey)}.js`
+      ),
       context: {
         // Passed as props to the component as this.props.pageContext
         // as well as to the GraphQL page query as graphql arguments
