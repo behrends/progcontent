@@ -6,3 +6,4 @@ description: >-
 ---
 
 Hier könnten wir spezielle Infos zum Kurs geben – oder doch nur strukturierte Infos im Frontmatter für das CMS bzw. Bearbeitung im Browser?
+beitung im Browser?

@@ -7,14 +7,10 @@
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {}
-          }
-        ]
+        extensions: ['.md', '.mdx'],
+        gatsbyRemarkPlugins: [`gatsby-remark-prismjs`]
       }
     },
     {

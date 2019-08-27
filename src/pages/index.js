@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 export default ({ data }) => {
   return (
     <Layout>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
+      {data.allMdx.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>
             <h3>{node.frontmatter.title}</h3>
@@ -19,7 +19,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
+    allMdx(
       filter: { frontmatter: { templateKey: { eq: "course-index" } } }
     ) {
       edges {

@@ -2,10 +2,10 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
 export default ({ path }) => {
-  const coursePath = '/src/pages' + path;
+  const coursePath = '/src/courses' + path;
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(
+      allMdx(
         filter: { frontmatter: { templateKey: { eq: "markdown-unit" } } }
         sort: { fields: fileAbsolutePath, order: ASC }
       ) {
@@ -29,7 +29,7 @@ export default ({ path }) => {
   // https://github.com/gatsbyjs/gatsby/issues/10482
   return (
     <ul>
-      {data.allMarkdownRemark.edges
+      {data.allMdx.edges
         .filter(
           ({ node }) => node.fileAbsolutePath.indexOf(coursePath) !== -1
         )
