@@ -5,4 +5,4 @@ description: >-
   Hier werden die Java-Script-Grundlagen für React (Native) gelegt.
 ---
 
-Hier könnten wir spezielle Infos zum Kurs geben – oder doch nur strukturierte Infos im Frontmatter für das CMS bzw. Bearbeitung im Browser?
+In der Programmierung mit React und React Native kommen häufig bestimmte Sprachkonzepte von JavaScript zum Einsatz, die erst in den letzten Jahren eingeführt wurden. In den folgenden Lektionen werden daher diese wesentlichen Aspekte vorgestellt, damit der Einstieg in React (Native) gelingt.
