@@ -1,9 +1,12 @@
 ---
 templateKey: course-index
-title: Kotlin für Java-Entwickler
+title: Kotlin von Java kommend
 description: >-
   Einstieg in Kotlin für Leute mit Java-Erfahrung.
 ---
 
-Hier könnten wir spezielle Infos zum Kurs geben – oder doch nur strukturierte Infos im Frontmatter für das CMS bzw. Bearbeitung im Browser?
-beitung im Browser?
+Wissenswertes zu Kotlin, um mit der Entwicklung nativer
+Android-Apps beginnen zu können. Für Leute mit Programmiererfahrung
+in Java.
+
+Status: Idee, noch nicht begonnen
