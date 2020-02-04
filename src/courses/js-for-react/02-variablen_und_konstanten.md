@@ -5,7 +5,7 @@ title: Variablen und Konstanten
 
 import Quiz from "../../components/quiz"
 
-Mit ES2015 wurden in JavaScript Konstanten eingeführt. Einer Konstanten muss bei ihrer Deklaration ein Wert zugewiesen werden, der nicht mehr verändert wer- den kann. Sonst führt dies zu einem Laufzeitfehler:
+Mit ES2015 wurden in JavaScript Konstanten eingeführt. Einer Konstanten muss bei ihrer Deklaration ein Wert zugewiesen werden, der nicht mehr verändert werden kann. Sonst führt dies zu einem Laufzeitfehler:
 
 ```js
 // Konstanten müssen initialisiert werden
