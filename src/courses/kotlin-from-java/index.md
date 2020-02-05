@@ -1,6 +1,6 @@
 ---
 templateKey: course-index
-title: Kotlin von Java kommend
+title: Kotlin von Java kommend - Not started
 description: >-
   Einstieg in Kotlin für Leute mit Java-Erfahrung.
 ---
