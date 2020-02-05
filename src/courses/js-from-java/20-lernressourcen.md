@@ -3,11 +3,17 @@ templateKey: markdown-unit
 title: Online-Ressourcen zu JavaScript
 ---
 
+Dokumentation dient zum systematischen Nachschlagen. Tutorials und Online-Bücher
+können zur Vertiefung und Erweiterung des Wissens herangezogen werden. Hier ist
+eine kleine Auswahl zu sehen.
+
 ### Dokumentation
 
 - [Mozilla Developer Network (MDN – developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Tutorials
+
+Zum Teil bieten diese Webseiten weitere Themen außer JavaScript an.
 
 - [javascript.info](https://javascript.info)
 - [freeCodeCamp.org](https://www.freecodecamp.org)
