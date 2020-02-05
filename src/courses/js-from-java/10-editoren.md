@@ -11,7 +11,11 @@ Außerdem finden sich zahlreiche Online-Entwicklungsumgebungen für JavaScript (
 
 ### Entwickler-Tools im Browser (Firefox, Chrome, etc.)
 
-### Editoren
+Jeder moderne Browser hat integrierte Entwickler-Tools, die sich durch bestimmte Menüeinträge
+oder Tastaturkombinationen öffnen lassen. Diese sehr umfangreichen und mächtigen Werkzeuge
+haben insbesondere eine interaktive JavaScript-Konsole.
+
+### Editoren (Linux, macOS, Windows)
 
 - [VS Code (https://code.visualstudio.com)](https://code.visualstudio.com) (_Empfehlung_)
 - [IntelliJ/WebStorm/PhpStorm (https://jetbrains.com)](https://jetbrains.com)
