@@ -25,7 +25,7 @@ Es gib einige wichtige Unterschiede zwischen JavaScript und Java.
 - Klassen (mit Konstruktoren und Vererbung? ohne static? kein private/public)
 - TypeScript (Typen, Interfaces, etc.?)
 - Übungsaufgabe / Quizzes (&xrarr; MBL)
-- Publish: check name (prog-platform), print PDF
+- Publish: check name (prog-platform, auch GitHub), print PDF, link auf GitHub, Lizenzen etc. siehe Todos auf Papier
 - Hinweis auf andere weiterführende Dinge…
 - check stuff: (undefined,null,Symbol and other JS types?)
 - check Java slides (Grundbegriffe, etc.)
