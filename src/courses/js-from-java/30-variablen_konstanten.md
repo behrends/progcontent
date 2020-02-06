@@ -26,8 +26,7 @@ otherVar = true;
 otherVar = 321;
 
 // Variablen sind Namen, an die Werte gebunden werden
-// Variablen haben keine Typen
-// die an sie gebundenen Werte haben Typen
+// Variablen haben keine Typen — nur die an Variablen gebundenen Werte
 let x;
 x = 1; // x hat einen Wert vom Typ number
 x = 'Hallo'; // x hat einen Wert vom Typ string

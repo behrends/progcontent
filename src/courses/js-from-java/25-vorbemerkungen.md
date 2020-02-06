@@ -22,7 +22,7 @@ wird das Programm beendet.
 
 ```js
 5 - 3;   // wird ausgeführt
-8 *&^ 2; // Progrmm wird mit syntax error beendet
+8 *&^ 2; // Programm wird mit syntax error beendet
 ```
 
 ### let statt var für Variablen – ohne Datentypen zu nennen
@@ -40,14 +40,14 @@ x = 'Hallo'; // dies ist erlaubt!
 
 ### Strings und Template-Strings
 
-Strings können entweder mit `'` und `"` umgeben werden. Hier wird
-hauptsächlich `'` verwendet. Template-Strings bieten eine elegante
-Möglichkeit, Strings dynamisch zusammenzusetzen.
+Strings können mit `'`, `"` oder `` ` `` umgeben werden. Hier wird hauptsächlich `'` verwendet. Template-Strings mit `` ` `` bieten eine elegante
+Möglichkeit, Strings dynamisch zusammenzusetzen (String-Interpolation).
 
 ```js
 let name1 = 'Joe';
 let name2 = 'Jane';
 
+// Template-Strings für dynamische Interpolation
 let name3 = `${name1} Smith`; // --> Joe Smith
 let name4 = `${name2} Smith`; // --> Jane Smith
 ```
