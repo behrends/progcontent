@@ -5,11 +5,16 @@ import { Helmet } from 'react-helmet';
 import 'prismjs/themes/prism-coy.css';
 
 export default ({ children }) => (
-  <div style={{ margin: `3rem auto`, maxWidth: 740, padding: `0 1rem` }}>
+  <div
+    style={{ margin: `3rem auto`, maxWidth: 1080, padding: `0 1rem` }}
+  >
     <Helmet>
       <meta charSet="utf-8" />
       <title>Prog Platform</title>
-      <link rel="canonical" href="https://prog-platform.netlify.com/" />
+      <link
+        rel="canonical"
+        href="https://prog-platform.netlify.com/"
+      />
     </Helmet>
     <Link to="/">HOME</Link>
     {children}
