@@ -29,5 +29,4 @@ Es gib einige wichtige Unterschiede zwischen JavaScript und Java.
 - JS-ausführen, https://react-live.netlify.com/ o.a. für HTML/CSS?
 - https://book.klipse.tech/, https://codemirror.net/
 - Hinweis auf andere weiterführende Dinge…
-- check stuff: (undefined,null,Symbol and other JS types?)
 - check Java slides (Grundbegriffe, etc.)
