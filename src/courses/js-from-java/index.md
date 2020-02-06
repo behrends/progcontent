@@ -27,6 +27,7 @@ Es gib einige wichtige Unterschiede zwischen JavaScript und Java.
 - Übungsaufgabe / Quizzes (&xrarr; MBL)
 - Publish: check name (prog-platform, auch GitHub), print PDF, link auf GitHub, Lizenzen etc. siehe Todos auf Papier
 - JS-ausführen, https://react-live.netlify.com/ o.a. für HTML/CSS?
+- https://book.klipse.tech/, https://codemirror.net/
 - Hinweis auf andere weiterführende Dinge…
 - check stuff: (undefined,null,Symbol and other JS types?)
 - check Java slides (Grundbegriffe, etc.)
