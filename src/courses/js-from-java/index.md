@@ -5,11 +5,8 @@ description: >-
   Einstieg in JavaScript für Leute, die Java kennen.
 ---
 
-Es gib einige wichtige Unterschiede zwischen JavaScript und Java.
-
-**Hinweise:**
-
 - Programmierkenntnisse in Java werden vorausgesetzt.
-- JavaScript wird hier als allgemeine Programmiersprache betrachtet
-- ohne auf die Besonderheiten der Web-Browser und das DOM einzugehen.
+- JavaScript wird hier als allgemeine Programmiersprache betrachtet.
+- Nur die wesentlichen Aspekte für den Einstieg in JavaScript werden vorgestellt.
+- Auf die Besonderheiten der Web-Browser und das DOM wird hier nicht eingegangen.
 - Insbesondere werden hier HTML und CSS nicht behandelt.
