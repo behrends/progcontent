@@ -12,9 +12,10 @@ const SingleNextLink = styled.div`
   justify-content: flex-end;
 `;
 
-const LinkTitle = styled.h4`
+const LinkTitle = styled.span`
   color: darkgrey;
   margin-bottom: 0;
+  font-size: 1.2em;
 `;
 
 export default ({ prev = null, next = null }) => {
@@ -28,7 +29,7 @@ export default ({ prev = null, next = null }) => {
     return (
       <SingleNextLink>
         <Link to={next.link}>
-          <LinkTitle>Weiter</LinkTitle>
+          <LinkTitle>&#10230; &nbsp;</LinkTitle>
           {next.title}
         </Link>
       </SingleNextLink>
@@ -39,13 +40,13 @@ export default ({ prev = null, next = null }) => {
     <PrevAndNextLinks>
       {prev && (
         <Link to={prev.link}>
-          <LinkTitle>Zurück</LinkTitle>
+          <LinkTitle>&#10229; &nbsp;</LinkTitle>
           {prev.title}
         </Link>
       )}
       {next && (
         <Link to={next.link}>
-          <LinkTitle>Weiter</LinkTitle>
+          <LinkTitle>&#10230; &nbsp;</LinkTitle>
           {next.title}
         </Link>
       )}

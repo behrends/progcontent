@@ -11,6 +11,7 @@ export default ({
   return (
     <Layout>
       &nbsp;&nbsp;<Link to={`${courseIndex}`}>Inhalt</Link>
+      <PrevAndNext prev={prev} next={next} />
       <div>
         <h1>{mdx.frontmatter.title}</h1>
         <MDXRenderer>{mdx.body}</MDXRenderer>
