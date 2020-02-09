@@ -16,7 +16,7 @@ export default ({ children }) => (
         href="https://prog-platform.netlify.com/"
       />
     </Helmet>
-    <Link to="/">HOME</Link>
+    <Link to="/">Startseite</Link>
     {children}
   </div>
 );

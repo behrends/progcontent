@@ -36,14 +36,16 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   function getNextAndPrevNodes(node, idx, docs) {
-    const nextNode = idx === docs.length - 1 ? null : docs[idx + 1].node;
+    const nextNode =
+      idx === docs.length - 1 ? null : docs[idx + 1].node;
     const prevNode = idx === 0 ? null : docs[idx - 1].node;
     // only add prev and next node to nodes with same template (in same course)
     let next = null,
       prev = null;
     if (
       nextNode &&
-      nextNode.frontmatter.templateKey === node.frontmatter.templateKey
+      nextNode.frontmatter.templateKey ===
+        node.frontmatter.templateKey
     ) {
       next = {
         title: nextNode.frontmatter.title,
@@ -52,7 +54,8 @@ exports.createPages = async ({ graphql, actions }) => {
     }
     if (
       prevNode &&
-      prevNode.frontmatter.templateKey === node.frontmatter.templateKey
+      prevNode.frontmatter.templateKey ===
+        node.frontmatter.templateKey
     ) {
       prev = {
         title: prevNode.frontmatter.title,
@@ -63,7 +66,11 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   result.data.allMdx.edges.forEach(({ node }, idx, docs) => {
-    let nextAndPrev = getNextAndPrevNodes(node, idx, docs);
+    const nextAndPrev = getNextAndPrevNodes(node, idx, docs);
+    const courseIndex = node.fields.slug.replace(
+      /(\/.*\/)(.*\/)/,
+      '$1'
+    );
     createPage({
       path: node.fields.slug,
       component: path.resolve(
@@ -73,6 +80,7 @@ exports.createPages = async ({ graphql, actions }) => {
         // Passed as props to the component as this.props.pageContext
         // as well as to the GraphQL page query as graphql arguments
         slug: node.fields.slug,
+        courseIndex: courseIndex,
         ...nextAndPrev
       }
     });
