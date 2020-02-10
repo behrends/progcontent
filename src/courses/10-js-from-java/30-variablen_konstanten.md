@@ -40,6 +40,12 @@ const localConstant = 3.1415;
 // const otherConstant; // --> syntax error
 ```
 
+### Bezeichner
+
+Die Namen von Variablen, Konstanten, Funktionen, Klassen, usw. dürfen nicht mit einer Zahl beginnen.
+Ansonsten dürfen Bezeichner aus allen Buchstaben des Alphabets, Zahlen, `_` und `$` bestehen. Es wird zwischen
+Groß- und Kleinschreibung unterschieden (JavaScript ist also _case sensitive_).
+
 **Hinweis:** Es gibt auch die Möglichkeit, Variablen mit `var` zu deklarieren, was hier
 nicht behandelt wird. Oft wird davon abgeraten, `var` zu verwenden – mehr dazu z.B. unter
 [javascript.info/var](https://javascript.info/var)
