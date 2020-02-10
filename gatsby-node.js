@@ -4,13 +4,22 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `Mdx`) {
-    let slug = createFilePath({ node, getNode, basePath: `courses` });
+    const filePath = createFilePath({
+      node,
+      getNode,
+      basePath: `courses`
+    });
     // remove digits and dash at start of slug, e.g. /08-foo/ becomes /foo/
-    slug = slug.replace(/\d+-/, '');
+    const slug = filePath.replace(/\d+-/, '');
     createNodeField({
       node,
       name: `slug`,
       value: slug
+    });
+    createNodeField({
+      node,
+      name: `filePath`,
+      value: filePath
     });
   }
 };
@@ -28,6 +37,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             fields {
               slug
+              filePath
             }
           }
         }

@@ -11,7 +11,7 @@ export default ({ data: { mdx } }) => {
         <h1>{mdx.frontmatter.title}</h1>
         <h2>{mdx.frontmatter.description}</h2>
         <MDXRenderer>{mdx.body}</MDXRenderer>
-        <UnitList path={mdx.fields.slug} />
+        <UnitList path={mdx.fields.filePath} />
       </div>
     </Layout>
   );
@@ -26,6 +26,7 @@ export const query = graphql`
       }
       fields {
         slug
+        filePath
       }
       body
     }
