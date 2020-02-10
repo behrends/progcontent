@@ -48,6 +48,19 @@ bestehen. Es wird zwischen Groß- und Kleinschreibung unterschieden (JavaScript 
 Meistens werden Bezeichner in _camelCase_-Schreibweise angegeben. Reservierte Schlüsselwörter sind nicht als Bezeichner
 erlaubt.
 
+```js
+// Zulässige Bezeichner:
+let justAnotherName = 'Joe'; // justAnotherName in camelCase
+let _just_a_WeirdName = '';
+const name_$123 = 'name_$123';
+const $1 = 1;
+
+// Nicht als Bezeichner erlaubt:
+// const 1Name;  // syntax error (Bezeichner darf nicht mit Zahl beginnen)
+// let Gibt's-nicht; // syntax error (unzulässige Zeichen im Bezeichner)
+// const class = 1; // syntax error (class ist reserviertes Schlüsselwort)
+```
+
 **Hinweis:** Es gibt auch die Möglichkeit, Variablen mit `var` zu deklarieren, was hier
 nicht behandelt wird. Oft wird davon abgeraten, `var` zu verwenden – mehr dazu z.B. unter
 [javascript.info/var](https://javascript.info/var)

@@ -32,9 +32,10 @@ console.log('Hallo ' + 'Leute!');
 !(3 >= 4 || 4 < 3); // true
 ```
 
-Es gibt zwei Arten, in JavaScript Gleichheit von Ausdrücken zu überprüfen: `==` und `===`.
-Empfohlen wird der Einsatz des „strikten“ Vergleichs mit `===`, denn die „lose“ Gleichheit
-kann beim Vergleich von Werten unterschiedlichen Datentyps zu unerwarteten Ergebnissen führen:
+Es gibt zwei Arten, in JavaScript Gleichheit von Ausdrücken zu überprüfen: `==` und `===`
+beziehungsweise `!=` und `!===` für Ungleichheit. Empfohlen wird der Einsatz des „strikten“
+Vergleichs mit `===` (bzw. `!==`), denn die „lose“ Gleichheit `==` (bzw. `!=`) kann beim
+Vergleich von Werten unterschiedlichen Datentyps zu unerwarteten Ergebnissen führen:
 
 ```js
 // schwacher Vergleich liefert true
@@ -44,8 +45,8 @@ kann beim Vergleich von Werten unterschiedlichen Datentyps zu unerwarteten Ergeb
 1 === '1'; // --> false
 ```
 
-Strings können mit `===` auf Gleichheit getestet werden und ein String-Vergleich überprüft die
-lexikographische Ordnung von Strings:
+Strings können mit `===` bzw. `!==` auf Gleichheit bzw. Ungleichheit getestet werden und
+ein String-Vergleich überprüft die lexikographische Ordnung von Strings:
 
 ```js
 'abc' === 'abc'; // true
