@@ -21,6 +21,7 @@ export const query = graphql`
   query {
     allMdx(
       filter: { frontmatter: { templateKey: { eq: "course-index" } } }
+      sort: { fields: fileAbsolutePath, order: ASC }
     ) {
       edges {
         node {
