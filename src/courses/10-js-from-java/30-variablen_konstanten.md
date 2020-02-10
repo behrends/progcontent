@@ -42,9 +42,11 @@ const localConstant = 3.1415;
 
 ### Bezeichner
 
-Die Namen von Variablen, Konstanten, Funktionen, Klassen, usw. dürfen nicht mit einer Zahl beginnen.
-Ansonsten dürfen Bezeichner aus allen Buchstaben des Alphabets, Zahlen, `_` und `$` bestehen. Es wird zwischen
-Groß- und Kleinschreibung unterschieden (JavaScript ist also _case sensitive_).
+Bei Bezeichnern gilt ähnliches wie in Java. Die Namen von Variablen, Konstanten, Funktionen, Klassen, usw.
+dürfen nicht mit einer Zahl beginnen. Ansonsten dürfen Bezeichner aus allen Buchstaben des Alphabets, Zahlen, `_` und `$`
+bestehen. Es wird zwischen Groß- und Kleinschreibung unterschieden (JavaScript ist also _case sensitive_).
+Meistens werden Bezeichner in _camelCase_-Schreibweise angegeben. Reservierte Schlüsselwörter sind nicht als Bezeichner
+erlaubt.
 
 **Hinweis:** Es gibt auch die Möglichkeit, Variablen mit `var` zu deklarieren, was hier
 nicht behandelt wird. Oft wird davon abgeraten, `var` zu verwenden – mehr dazu z.B. unter
