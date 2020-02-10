@@ -38,6 +38,11 @@ let x = 123;
 x = 'Hallo'; // dies ist erlaubt!
 ```
 
+### Kommentare wie in Java
+
+Genau wie in Java können Kommentare in JavaScript-Code mit `//` bis zum Zeilenende
+oder mit `/* ... */` über mehrere Zeilen hinweg angegeben werden.
+
 ### Strings und Template-Strings
 
 Strings können mit `'`, `"` oder `` ` `` umgeben werden. Hier wird hauptsächlich `'` verwendet. Template-Strings mit `` ` `` bieten eine elegante

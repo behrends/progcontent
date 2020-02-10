@@ -22,3 +22,6 @@ Eingabe von Daten im Browser kann ebenso über einen Dialog mit Eingabefeld erfo
 ```js
 let name = prompt('Wie heißt du?');
 ```
+
+In Webanwendungen werden z.B. Eingabeformulare mit HTML umgesetzt und mit JavaScript im
+Browser verarbeitet.

@@ -5,7 +5,8 @@ title: Variablen und Konstanten
 
 In JavaScript gibt es Variablen und Konstanten, denen beliebige Werte zugewiesen werden
 können. Die Werte von Variablen können sich ändern, die von Konstanten nicht.
-Variablen werden mit `let` und Konstanten mit `const` deklariert.
+Variablen werden mit `let` und Konstanten mit `const` deklariert und haben wie lokale
+Variablen ihren Gültigkeitsbereich im umgebenden Code-Block (`{ ... }`).
 
 Variablen und Konstanten selbst haben keine Typen, denn JavaScript ist dynamisch
 typisiert. Daher können einer Variablen zur Laufzeit beliebige Werte verschiedener

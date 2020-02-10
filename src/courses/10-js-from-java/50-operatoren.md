@@ -54,3 +54,5 @@ ein String-Vergleich überprüft die lexikographische Ordnung von Strings:
 'abc' < 'bcd'; // true
 'abc' > 'xyz'; // false
 ```
+
+Es gibt auch den aus Java bekannten ternären oder Bedingungsoperator (`? :`).
