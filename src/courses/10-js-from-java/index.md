@@ -1,6 +1,6 @@
 ---
 templateKey: course-index
-title: JavaScript von Java kommend
+title: JavaScript für Java-Devs
 description: >-
   Einstieg in JavaScript für Leute, die Java kennen.
 ---
