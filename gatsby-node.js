@@ -10,7 +10,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       basePath: `courses`
     });
     // remove digits and dash at start of slug, e.g. /08-foo/ becomes /foo/
-    const slug = filePath.replace(/\d+-/, '');
+    const slug = filePath.replace(/\d+-/g, '');
     createNodeField({
       node,
       name: `slug`,
