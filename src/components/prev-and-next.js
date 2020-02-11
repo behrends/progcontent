@@ -29,8 +29,8 @@ export default ({ prev = null, next = null }) => {
     return (
       <SingleNextLink>
         <Link to={next.link}>
-          <LinkTitle>&#10230; &nbsp;</LinkTitle>
           {next.title}
+          <LinkTitle>&nbsp; &#10230;</LinkTitle>
         </Link>
       </SingleNextLink>
     );
@@ -46,8 +46,8 @@ export default ({ prev = null, next = null }) => {
       )}
       {next && (
         <Link to={next.link}>
-          <LinkTitle>&#10230; &nbsp;</LinkTitle>
           {next.title}
+          <LinkTitle>&nbsp; &#10230;</LinkTitle>
         </Link>
       )}
     </PrevAndNextLinks>
