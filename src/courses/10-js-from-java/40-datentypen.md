@@ -77,7 +77,7 @@ const smithFamily = {
 };
 ```
 
-Zu Objekten, Arrays und Funktionen gibt es eigene Abschnitte (siehe hier (Objekte), hier (Arrays) und hier (Funktionen) TODO).
+Zu Objekten, Arrays und Funktionen gibt es eigene Abschnitte (siehe [Objekte](../objekte), [Arrays](../arrays) und [Funktionen](../funktionen)).
 
 ---
 
