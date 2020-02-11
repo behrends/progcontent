@@ -3,6 +3,9 @@ templateKey: markdown-unit
 title: Schleifen (while und for)
 ---
 
+**Vorbemerkung:** Auch bei den Schleifenbedingungen werden JavaScript-Ausdrücke bei Bedarf in
+Wahrheitswerte umgewandelt (siehe die Beschreibungen zu „_truthy_“ und „_falsy_“ bei [Verzweigungen](../if_else)).
+
 ### `while`
 
 Im Prinzip wie in Java
