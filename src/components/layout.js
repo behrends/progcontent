@@ -10,11 +10,8 @@ export default ({ children, indexLink }) => (
   >
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Prog Platform</title>
-      <link
-        rel="canonical"
-        href="https://prog-platform.netlify.com/"
-      />
+      <title>Prog Content</title>
+      <link rel="canonical" href="https://www.progcontent.com" />
     </Helmet>
     <Link to="/">Startseite</Link>
     &nbsp;&nbsp;{indexLink}
