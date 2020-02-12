@@ -6,4 +6,4 @@ description: >-
 ---
 
 Es werden nur die wichtigsten Grundlagen zu HTML behandelt, die benötigt werden,
-um kleiner Webanwendungen zu entwickeln.
+um einfache Webanwendungen zu entwickeln.
