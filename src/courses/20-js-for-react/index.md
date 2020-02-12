@@ -1,6 +1,6 @@
 ---
 templateKey: course-index
-title: JavaScript für React (Native) - Not finished
+title: JavaScript für React (Native) - work in progress
 description: >-
   Hier werden die Java-Script-Grundlagen für React (Native) gelegt.
 ---
