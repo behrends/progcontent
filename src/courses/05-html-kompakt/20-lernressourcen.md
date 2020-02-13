@@ -17,5 +17,5 @@ eine kleine Auswahl zu sehen.
 Zum Teil bieten diese Webseiten weitere Themen außer HTML an.
 
 - [freeCodeCamp.org](https://www.freecodecamp.org)
-- [The Odin Project (https://www.theodinproject.com)](https://www.theodinproject.com)
-- [learn.shayhowe.com](http://learn.shayhowe.com)
+- [The Odin Project (www.theodinproject.com)](https://www.theodinproject.com)
+- [Learn to Code HTML & CSS by Shay Howe (learn.shayhowe.com)](http://learn.shayhowe.com)
