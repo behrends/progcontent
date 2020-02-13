@@ -7,7 +7,7 @@ import 'prismjs/themes/prism-coy.css';
 export default ({ children, indexLink }) => (
   <div
     style={{
-      margin: `0 3rem auto`,
+      margin: `0 auto`,
       maxWidth: 1080,
       minHeight: '100vh',
       display: 'flex',
