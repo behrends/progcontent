@@ -10,7 +10,7 @@ eine kleine Auswahl zu sehen.
 ### Dokumentation
 
 - [selfhtml.org](https://selfhtml.org) (deutsch)
-- [Mozilla Developer Network (MDN – developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Mozilla Developer Network (MDN – developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTML) (englisch, z.T. deutsch)
 
 ### Tutorials
 
