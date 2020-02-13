@@ -20,7 +20,7 @@ export default ({ children, indexLink }) => (
       <link rel="canonical" href="https://www.progcontent.com" />
     </Helmet>
     <header>
-      <Link to="/">Startseite</Link>
+      <Link to="/">Prog Content</Link>
       &nbsp;&nbsp;{indexLink}
     </header>
     <div style={{ flex: 1 }}>{children}</div>

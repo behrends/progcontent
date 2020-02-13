@@ -8,7 +8,7 @@ export default ({
   data: { mdx },
   pageContext: { next, prev, courseIndex }
 }) => {
-  const index = <Link to={`${courseIndex}`}>Inhalt</Link>;
+  const index = <Link to={`${courseIndex}`}>Inhaltsverzeichnis</Link>;
   return (
     <Layout indexLink={index}>
       <PrevAndNext prev={prev} next={next} />
