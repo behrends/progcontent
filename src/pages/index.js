@@ -9,7 +9,8 @@ export default ({ data }) => {
       <p>
         Aktuell werden mehrere Kurse zu den Themen Programmierung,
         Webanwendungen (Frontend-Technologien) und mobiler
-        App-Entwicklung angeboten.
+        App-Entwicklung angeboten. Die Inhalte werden zur Zeit
+        fortlaufend ergänzt.
       </p>
       {data.allMdx.edges.map(({ node }) => (
         <div key={node.id}>
