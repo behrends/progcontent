@@ -5,6 +5,12 @@ import Layout from '../components/layout';
 export default ({ data }) => {
   return (
     <Layout>
+      <h1>Kursübersicht</h1>
+      <p>
+        Aktuell werden mehrere Kurse zu den Themen Programmierung,
+        Webanwendungen (Frontend-Technologien) und mobiler
+        App-Entwicklung angeboten.
+      </p>
       {data.allMdx.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>
