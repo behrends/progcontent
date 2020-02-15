@@ -24,4 +24,5 @@ collections:
           widget: 'hidden',
           default: 'markdown-unit',
         }
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
