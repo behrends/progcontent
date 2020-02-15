@@ -30,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `JavaScript für React`,
-        short_name: `JS-React`,
+        name: `Prog Content`,
+        short_name: `ProgContent`,
         start_url: `/`,
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
