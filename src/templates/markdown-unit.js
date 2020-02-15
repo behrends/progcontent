@@ -4,11 +4,17 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import PrevAndNext from '../components/prev-and-next';
 
-export const ArticleTemplate = ({ title, content }) => {
+export const ArticleTemplate = ({
+  title,
+  content,
+  contentComponent
+}) => {
+  const ActualContentComponent =
+    contentComponent || (({ children }) => <div>{children}</div>);
   return (
     <div>
       <h1>{title}</h1>
-      <MDXRenderer>{content}</MDXRenderer>
+      <ActualContentComponent>{content}</ActualContentComponent>
     </div>
   );
 };
@@ -24,6 +30,7 @@ export default ({
       <ArticleTemplate
         title={mdx.frontmatter.title}
         content={mdx.body}
+        contentComponent={MDXRenderer}
       />
       <PrevAndNext prev={prev} next={next} />
     </Layout>
