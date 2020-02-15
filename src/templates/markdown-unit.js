@@ -4,7 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import PrevAndNext from '../components/prev-and-next';
 
-export const ArticleTemplate = ({ content, title }) => {
+export const ArticleTemplate = ({ title, content }) => {
   return (
     <div>
       <h1>{title}</h1>
