@@ -12,10 +12,10 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'courses'
-    label: 'All courses'
-    folder: 'src/courses'
-    create: false
+  - name: 'html-kompakt'
+    label: 'HTML kompakt'
+    folder: 'src/courses/05-html-kompakt'
+    create: true
     slug: '{{num}}-{{slug}}'
     fields:
       - {
