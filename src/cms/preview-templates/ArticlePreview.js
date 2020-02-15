@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ArticleTemplate } from '../../templates/markdown-unit';
 
 const ArticlePreview = ({ entry, widgetFor }) => {
@@ -9,13 +8,6 @@ const ArticlePreview = ({ entry, widgetFor }) => {
       content={widgetFor('body')}
     />
   );
-};
-
-ArticlePreview.propTypes = {
-  entry: PropTypes.shape({
-    getIn: PropTypes.func
-  }),
-  widgetFor: PropTypes.func
 };
 
 export default ArticlePreview;
