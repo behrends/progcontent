@@ -10,7 +10,12 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: ['.md', '.mdx'],
-        gatsbyRemarkPlugins: [`gatsby-remark-prismjs`]
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: { noInlineHighlight: true }
+          }
+        ]
       }
     },
     {
