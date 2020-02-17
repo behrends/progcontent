@@ -12,14 +12,12 @@ Folgende Datentypen in JavaScript sind hier relevant:
 - `undefined`
 - `null`
 
-`number`
+### number
 
 Der Typ `number` umfasst ganze Zahlen (z.B. `123`) und Gleitkommazahlen (z.B. `3.1415`).
 Es gibt also keinen besonderen Datentyp für Gleitkommazahlen.
 
----
-
-`string`
+### string
 
 Zeichenketten bzw. Strings werden mit `"`, `'` oder `` ` `` umgeben. Hier werden Strings
 hauptsächlich mit einfachen Anführungszeichen angegeben (also `'`). Mit Template-Strings,
@@ -36,15 +34,11 @@ console.log(`Full name: ${firstName} ${lastName}`);
 
 Dies ist manchmal eleganter oder kompakter als die String-Konkatenation mit `+`.
 
----
+### boolean
 
-`boolean`
+Wie auch in Java gewohnt sind die Wahrheitswerte `true` und `false` die einzigen möglichen Werte von `boolean`.
 
-Wie gewohnt sich die Wahrheitswerte `true` und `false` die einzigen möglichen Werte von `boolean`.
-
----
-
-`object`
+### object
 
 Zu `object` zählen Objekte, Arrays und Funktionen. Objekte werden in geschweiften Klammern
 angegeben und bestehen aus einzelnen _key/value_-Paaren der Form `key: value`, die mit Komma
@@ -79,9 +73,7 @@ const smithFamily = {
 
 Zu Objekten, Arrays und Funktionen gibt es eigene Abschnitte (siehe [Objekte](../objekte), [Arrays](../arrays) und [Funktionen](../funktionen)).
 
----
-
-`null`
+### null
 
 `null` ist ein Nullwert, der nüztlich ist, um nicht vorhandene oder noch nicht gesetzte Werte
 auszudrücken. Dazu ein Beispiel:
@@ -94,9 +86,7 @@ const joe = { firstName: 'John', lastName: null };
 joe.lastName = 'Smith';
 ```
 
----
-
-`undefined`
+### undefined
 
 `undefined` ist der Wert von nicht initialisierten Variablen und der Rückgabewert
 von Funktionen ohne `return`-Anweisung. Außerdem ergibt der Zugriff auf nicht vorhandene Eigenschaften
