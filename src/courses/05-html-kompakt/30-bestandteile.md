@@ -17,8 +17,8 @@ vielleicht wie folgt:
 
 <h1 style="font-family: serif;">Dies ist eine Überschrift</h1>
 
-Abhängig davon, welcher Browser verwendet wird und ob das HTML auf einem Laptop oder
-Smartphone geladen wird, kann die Darstellung dieser Überschrift leicht abweichen.
+Abhängig davon, welcher Browser verwendet wird und ob das HTML-Dokument auf einem Laptop oder
+Smartphone geladen wird, kann die Darstellung dieser Überschrift jeweils leicht abweichen.
 Aber in der Regel erscheint eine Überschrift fettgedruckt und in größeren Buchstaben.
 
 Schauen wir uns nochmals die Überschrift in HTML an:
@@ -35,7 +35,13 @@ Auszeichnungssprache bezeichnet (HTML steht für _Hypertext Markup Language_).
 Auf Englisch werden diese „Markierungen“ wie z.B. `<h1>` und `</h1>` **Tags** genannt.
 Insbesondere ist `<h1>` ein **öffnendes Tag** und `</h1>` ist das zugehörige **schließende Tag**.
 Zusammen mit dem Text-Inhalt der Überschrift zwischen `<h1> ... </h1>` sprechen wir
-von einem `h1`**-Element**. Der Name eines Tags ist also gleichzeitig der Elementname.
+von einem `h1`**-Element**. Der Name eines Tags ist also gleichzeitig der Elementname,
+welcher von spitzen Klammern umgeben ist bzw. zwischen dem „kleiner als“-Zeichen `<` und dem
+„größer als“-Zeichen `>` steht. Zu beachten ist, dass schließende Tags nach dem
+`<`-Zeichen einen Schrägstrich `/` enthalten, damit eindeutig ist, dass dies hiermit
+das Element endet.
+
+![HTML-Element mit Tags](../../images/html/element-tags.png)
 
 - Attribute, Schachtelung, leere Elemente, Kinder, etc.
-- valid/invalid/browsers
+- valid/invalid/browsers, webhint/lighthouse/devtools

@@ -12,6 +12,7 @@ um einfache Webanwendungen zu entwickeln.
 
 - wichtige Elemente
   - h1, ..., h6
+  - block vs. inline
   - p, br, em/b, it/strong
   - div, span
   - img
