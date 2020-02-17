@@ -1,0 +1,167 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "Zqn4-6BfQk8jvPFdJ0orj",
+      "type": "text",
+      "x": 248,
+      "y": 246.5,
+      "width": 586,
+      "height": 25,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1561346062,
+      "points": [],
+      "text": "<img src=\"mypicture.png\" style=\"margin-top: 5px\"/>",
+      "font": "20px Cascadia",
+      "baseline": 20
+    },
+    {
+      "id": "XorfFTjJUJtd_lhF_AE5k",
+      "type": "arrow",
+      "x": 400,
+      "y": 206,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 422350457,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -67,
+          42
+        ]
+      ]
+    },
+    {
+      "id": "HMhUl17SJ_SvyZMoOux6u",
+      "type": "arrow",
+      "x": 464,
+      "y": 204,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1428848585,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          103,
+          42
+        ]
+      ]
+    },
+    {
+      "id": "1i5evr77Lb7RUARs0E9kP",
+      "type": "text",
+      "x": 386,
+      "y": 180,
+      "width": 128,
+      "height": 26,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 616900886,
+      "points": [],
+      "text": "Attributname",
+      "font": "20px Virgil",
+      "baseline": 18
+    },
+    {
+      "id": "acGVGIduloTSVNaL2e2zZ",
+      "type": "text",
+      "x": 404.5,
+      "y": 335,
+      "width": 189,
+      "height": 26,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 918709420,
+      "points": [],
+      "text": "Wert des Attributs",
+      "font": "20px Virgil",
+      "baseline": 18
+    },
+    {
+      "id": "JxiEL6KfU-VUJuCMJlDn4",
+      "type": "arrow",
+      "x": 421,
+      "y": 331,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1327228022,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -17,
+          -60
+        ]
+      ]
+    },
+    {
+      "id": "lVh_uNzptxKoXu70nlqd8",
+      "type": "arrow",
+      "x": 542,
+      "y": 331,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1766721319,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          93,
+          -60
+        ]
+      ]
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

@@ -35,3 +35,7 @@ Kein schließendes Tag bei `<!DOCTYPE html>`.
   </body>
 </html>
 ```
+
+Leere Zeilen oder anderer Whitespace wirken sich nicht aus. Jeder Text oder andere
+Inhalte sollten von Tags umgeben sein, die beschreiben, um welche Strukturelemente
+es sich handelt (Text: Überschriften, Absätze/Paragraphen, Listen, Tabellen, usw.).

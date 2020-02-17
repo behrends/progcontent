@@ -22,4 +22,5 @@ um einfache Webanwendungen zu entwickeln.
   - form, input, button
   - was noch?
 - entities
+- valid/invalid/browsers, webhint/lighthouse/devtools
 - was noch?
