@@ -36,15 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `courses`,
-        path: `${__dirname}/src/courses`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`
+        name: `src`,
+        path: `${__dirname}/src`
       }
     },
     `gatsby-plugin-styled-components`,
