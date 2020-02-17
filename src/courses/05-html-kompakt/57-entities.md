@@ -3,6 +3,8 @@ templateKey: markdown-unit
 title: Sonderzeichen und Entities
 ---
 
+import Quiz from "../../components/quiz"
+
 Wenn HTML-Elemente mit spitzen Klammern deklariert werden,
 wie ist es dann möglich, besondere Zeichen wie z.B. die spitzen
 Klammern bzw. die Größer-/Kleiner-Zeichen in Texten darzustellen?
@@ -19,3 +21,5 @@ einem `&` und einem Semikolon `;` stehen. Ein paar Beispiele:
 | `&amp;`  | `&`         | _ampersand_          |
 
 Die offizielle Liste aller Entities ist hier zu finden: [https://html.spec.whatwg.org/multipage/named-characters.html](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references)
+
+<Quiz question="Deklarieren Sie ein h1-Element, sodass diese Überschrift dargestellt wird: <h1>" answer={`<h1>&lt;h1&gt;</h1>`}/>

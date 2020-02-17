@@ -1,13 +1,31 @@
 import React from 'react';
 
+function checkAnswer(answer) {
+  let userAnswer = document.getElementById('answerText').value;
+  if (!userAnswer) return;
+  userAnswer = userAnswer.trim();
+  let result = userAnswer === answer ? 'Stimmt!' : 'Leider falsch.';
+  alert(result);
+}
+
 export default ({ question, answer }) => {
   if (!question || !answer)
     return <h3>Ich bin ein Quiz ohne Frage/Antwort!</h3>;
 
   return (
     <p>
-      <h3>{question}</h3>
-      <input placeholder="Antwort"></input>
+      <h4>{question}</h4>
+      <input
+        id="answerText"
+        type="text"
+        placeholder="Antwort"
+      ></input>
+      <button
+        onClick={() => checkAnswer(answer)}
+        style={{ marginLeft: '10px' }}
+      >
+        Antwort überprüfen
+      </button>
     </p>
   );
 };
