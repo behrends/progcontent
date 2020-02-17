@@ -41,7 +41,5 @@ welcher von spitzen Klammern umgeben ist bzw. zwischen dem „kleiner als“-Zei
 `<`-Zeichen einen Schrägstrich `/` enthalten, damit eindeutig ist, dass dies hiermit
 das Element endet.
 
-![HTML-Element mit Tags](../../images/html/element-tags.png)
-
 - Attribute, Schachtelung, leere Elemente, Kinder, etc.
 - valid/invalid/browsers, webhint/lighthouse/devtools
