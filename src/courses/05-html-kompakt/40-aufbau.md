@@ -64,7 +64,7 @@ Im `body`-Element werden die eigentlichen Inhalte des Dokuments festgelegt.
     <title>Titel wird im Browser-Tab angezeigt</title>
   </head>
   <body>
-    <h1>Dies ist die Überschrift</h1>
+    <h1>Dies ist die Hauptüberschrift</h1>
     <h2>Dies ist eine Zwischenüberschrift</h2>
   </body>
 </html>
@@ -75,7 +75,7 @@ auf die eine Zwischenüberschrift mit `h2` folgt. Die Darstellung der
 einzelnen Elemente im Browser ergibt sich aus der Reihenfolge der
 Elemente im HTML-Dokument:
 
-<h1 style="font-family: serif;">Dies ist die Überschrift</h1>
+<h1 style="font-family: serif;">Dies ist die Hauptüberschrift</h1>
 <h2 style="font-family: serif;">Dies ist eine Zwischenüberschrift</h2>
 
 ```html
@@ -86,7 +86,7 @@ Elemente im HTML-Dokument:
     <title>Titel wird im Browser-Tab angezeigt</title>
   </head>
   <body>
-    <h1>Dies ist die Überschrift</h1>
+    <h1>Dies ist die Hauptüberschrift</h1>
     <h2>Dies ist eine Zwischenüberschrift</h2>
   </body>
 </html>
@@ -124,7 +124,7 @@ Kommentare eindeutig von den HTML-Elementen unterschieden.
     <title>Titel wird im Browser-Tab angezeigt</title>
   </head>
   <body>
-    <h1>Dies ist die Überschrift</h1>
+    <h1>Dies ist die Hauptüberschrift</h1>
     <h2>Dies ist eine Zwischenüberschrift</h2>
     <!-- TODO: eigentlichen Inhalt ergänzen (Text, Bilder, usw.)  -->
   </body>
