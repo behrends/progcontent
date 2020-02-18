@@ -135,7 +135,7 @@ Dieses Beispiel erscheint so:
 </table>
 
 Mit `colspan` werden also Zellen über Spalten hinweg
-ausgedehnt wohingegen `rowspan` mehrere Zeilen zusammenfasst.
+ausgedehnt wohingegen `rowspan` mehrere nachfolgende Zeilen zusammenfasst.
 Wird `colspan` verwendet, dann fallen `td`-Einträge in
 derselben Zeile weg und bei `rowspan` werden `td`-Elemente
-in den betroffenen, anderen Zeilen weggelassen.
+in den betroffenen, nachfolgenden Zeilen weggelassen.

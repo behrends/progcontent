@@ -22,4 +22,7 @@ einem `&` und einem Semikolon `;` stehen. Ein paar Beispiele:
 
 Die offizielle Liste aller Entities ist hier zu finden: [https://html.spec.whatwg.org/multipage/named-characters.html](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references)
 
+Entities dürfen überall dort verwendet werden, wo auch andere Textinhalte
+zu finden sind &mdash; allerdings nicht in Elementnamen bzw. Tags.
+
 <Quiz question="Deklarieren Sie ein h1-Element, sodass diese Überschrift dargestellt wird: <h1>" answer={`<h1>&lt;h1&gt;</h1>`}/>

@@ -94,7 +94,7 @@ Elemente im HTML-Dokument:
 
 ### Bemerkungen
 
-Leere Zeilen oder Leerzeichen anderer Art (sogenannter*whitespace*) im HTML-Dokument
+Leere Zeilen oder Leerzeichen anderer Art (sogenannter _whitespace_) im HTML-Dokument
 wirken sich nicht auf die Darstellung im Browser aus. Selbst wenn mehrere leere
 Zeilen zwischen den Elementen oder innerhalb der Tags stehen, wird dies vom Browser
 ignoriert.
