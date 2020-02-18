@@ -60,7 +60,10 @@ hingegen ist ein allgemeines inline-Element.
 <div>
   <h3>Ein eigener Block</h3>
   <p>Vielleicht mit speziellen CSS-Styles</p>
-  <p>Hier könnte <span>dieses Element<span> inline mit CSS angepasst werden.</p>
+  <p>
+    Hier könnte <span>dieses Element</span> inline mit CSS angepasst
+    werden.
+  </p>
 </div>
 ```
 
@@ -74,7 +77,10 @@ bei den `span`- bzw. `div`-Elementen die speziellen Attribute
 <div id="info">
   <h3>Ein eigener Block</h3>
   <p>Vielleicht mit speziellen CSS-Styles</p>
-  <p>Hier könnte <span class="highlight">dieses Element<span> inline mit CSS angepasst werden.</p>
+  <p>
+    Hier könnte <span class="highlight">dieses Element</span> inline
+    mit CSS angepasst werden.
+  </p>
 </div>
 ```
 
