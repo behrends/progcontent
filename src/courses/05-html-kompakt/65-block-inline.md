@@ -66,4 +66,16 @@ hingegen ist ein allgemeines inline-Element.
 
 Im Zusammenhang mit CSS sieht man sehr häufig `div`- und `span`-Elemente, die
 eigene Styles erhalten. Insbesondere kann mit `span` und CSS eine Fett- und
-Kursivschrift ohne `b` und `i` erreicht werden.
+Kursivschrift ohne `b` und `i` erreicht werden. Hierzu werden
+bei den `span`- bzw. `div`-Elementen die speziellen Attribute
+`id` oder `class` mit passenden Werten definiert, um diese Elemente mit bestimmten CSS-Regeln zu selektieren und zu gestalten:
+
+```html
+<div id="info">
+  <h3>Ein eigener Block</h3>
+  <p>Vielleicht mit speziellen CSS-Styles</p>
+  <p>Hier könnte <span class="highlight">dieses Element<span> inline mit CSS angepasst werden.</p>
+</div>
+```
+
+Dies wird im Kurs zu CSS genauer besprochen.
