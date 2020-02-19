@@ -44,5 +44,5 @@ umgesetzt werden.
 Tipp: der Pfeil nach rechts vor den Webadressen ist eine Entity
 mit dem Namen _right arrow_.
 
-Eine erweitere Übung wäre, die List noch mit Bildern
+Eine erweitere Übung wäre, die Liste mit Bildern
 zu ergänzen (z.B. die Logos der aufgelisteten Webseiten).
