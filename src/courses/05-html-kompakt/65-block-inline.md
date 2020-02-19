@@ -53,8 +53,10 @@ vor, dass mehrere Elemente als ein zusammenhängendes Blockelement oder ein
 inline Element aufgefasst werden sollen. Für diese Anwendungsfälle stehen
 die Elemente `div` und `span` zur Verfügung. `div` und `span`
 bewirken keine besondere Darstellung im Browser, außer dass `div` als
-allgemeines Blockelement Zeilenumbrüche davor und danach erzwingt. `span`
-hingegen ist ein allgemeines inline-Element.
+allgemeines Blockelement Zeilenumbrüche davor und danach erzwingt
+&mdash; daher auch der Name `div` (_content division_). `span`
+hingegen ist ein allgemeines inline-Element ohne erzwungene
+Zeilenumbrüche (`span` kann hier als „Bereich“ übersetzt werden).
 
 ```html
 <div>
