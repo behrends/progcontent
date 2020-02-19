@@ -5,9 +5,9 @@ title: Elemente im Zusammenspiel
 
 HTML-Elemente werden häufig miteinander kombiniert. So können z.B.
 Listeneinträge nicht bloß aus Text sondern aus weiteren Listen
-bestehen und Bilder oder Links enthalten.
+bestehen und Bilder oder Links enthalten:
 
-<ul>
+<ul style="font-family: serif; padding: 0px 20px">
   <li>
     Mozilla Developer Network
     <ul>
@@ -36,6 +36,7 @@ bestehen und Bilder oder Links enthalten.
 </ul>
 
 Eine gute Übung ist, die obige Liste in HTML nachzubauen
+(die Links müssen dabei nicht farblich angepasst werden).
 Dies kann in einer Datei auf dem eigenen Computer erfolgen
 oder direkt im Browser bei [codepen.io](https://codepen.io)
 umgesetzt werden.
