@@ -10,8 +10,10 @@ um einfache Webanwendungen zu entwickeln.
 
 Themen (Todos):
 
+- Browser Stylesheet und Normalize
 - Aufbau von Regeln mit Selektoren und Eigenschaften
 - Gestaltung (Farben, Schriften, usw.)
+- specificity and cascade
 - Box-Modell (Abstände, Ränder)
 - Layout (FlexBox?, Grid?)
 - Frameworks
