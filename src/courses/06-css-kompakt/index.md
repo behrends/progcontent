@@ -17,5 +17,5 @@ Themen (Todos):
 - specificity and cascade
 - Box-Modell (Abstände, Ränder)
 - Layout (FlexBox?, Grid?)
-- Frameworks
+- Frameworks (Bootstrap, andere?)
 - CSS in Dokument (`style`-Elem), `style`-Attribut, link-Elem
