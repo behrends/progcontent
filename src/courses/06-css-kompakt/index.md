@@ -17,3 +17,4 @@ Themen (Todos):
 - Box-Modell (Abstände, Ränder)
 - Layout (FlexBox?, Grid?)
 - Frameworks
+- CSS in Dokument (`style`), link-Elem
