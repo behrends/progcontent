@@ -19,3 +19,4 @@ Themen (Todos):
 - Layout (FlexBox?, Grid?)
 - Frameworks (Bootstrap, andere?)
 - CSS in Dokument (`style`-Elem), `style`-Attribut, link-Elem
+- CSS-Dokumente enden mit `.css`
