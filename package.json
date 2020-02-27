@@ -13,8 +13,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.5.5",
-    "@mdx-js/react": "^1.5.5",
+    "@mdx-js/mdx": "^1.5.7",
+    "@mdx-js/react": "^1.5.7",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.17",
     "gatsby-plugin-manifest": "^2.2.41",
