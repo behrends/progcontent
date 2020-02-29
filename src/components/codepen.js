@@ -7,7 +7,10 @@ export default ({ id, height, defaultTabs }) => {
   return (
     <>
       <Helmet>
-        <script src="https://static.codepen.io/assets/embed/ei.js" />
+        <script
+          async
+          src="https://static.codepen.io/assets/embed/ei.js"
+        />
       </Helmet>
       <p
         className="codepen"
