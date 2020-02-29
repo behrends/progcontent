@@ -34,6 +34,8 @@ h1 {
 ```
 <!-- prettier-ignore-end -->
 
+![CSS Regel](../../images/css/regel.png)
+
 ### Kommentare in CSS
 
 ```css
