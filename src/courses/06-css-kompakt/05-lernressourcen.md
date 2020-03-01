@@ -14,7 +14,7 @@ eine kleine Auswahl zu sehen.
 
 ### Tutorials
 
-Zum Teil bieten diese Webseiten weitere Themen außer HTML an.
+Zum Teil bieten diese Webseiten weitere Themen außer CSS an.
 
 - [freeCodeCamp.org](https://www.freecodecamp.org)
 - [internetingishard.com](https://internetingishard.com)

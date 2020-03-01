@@ -8,7 +8,7 @@ import Codepen from '../../components/codepen'
 Es gibt zwei Möglichkeiten, CSS-Regeln direkt in HTML-Dokumenten zu definieren:
 
 - Innerhalb eines `<style>`-Elements im `<head>` des HTML-Dokuments
-- Als Wert des Attributs `style` bei bestimmten Elementen.
+- Als Wert des Attributs `style` bei einzelnen Elementen.
 
 **Bemerkung:** In der praktischen Webentwicklung werden Stylesheets in der Regel
 in eigenen CSS-Dateien getrennt vom HTML-Dokument definiert. Dies wird
@@ -41,10 +41,10 @@ dessen Inhalt aus CSS-Regeln bestehen kann:
 ```
 
 Mit obigem Beispiel würden `<h1>` Elemente mit Überschriften im
-HTML-Dokument in roter Schriftfarbe erscheinen. Zu beachten ist
+HTML-Dokument in roter Schriftfarbe erscheinen. Zu beachten ist,
 dass innerhalb der Tags `<style> ... </style>` keine weiteren HTML-Elemente
-stehen sondern dass dort Regeln in CSS-Syntax angegeben werden. Daher muss
-im obigen Beispiel entsprechend auch der Kommentar in `<style>` in CSS-Form
+stehen, sondern dass dort Regeln in CSS-Syntax angegeben werden. Daher muss
+im obigen Beispiel entsprechend auch der Kommentar innerhalb von `<style>` in CSS-Form
 erfolgen &mdash; also `/* ... */` und nicht `<!-- ... -->` wie im Rest des HTML-Dokuments.
 
 Die im `<style>`-Element deklarierten Regeln werden auf das HTML-Dokument
@@ -72,11 +72,12 @@ und `<body>`-Elemente deklarieren, um die wesentlichen Aspekte zu verdeutlichen:
 
 <Codepen id="VwLWaxr" height="280" defaultTabs="html,result" />
 
-Oben ist zu sehen, wie das `style`-Attribut des zweiten `<h1>`-Elements Vorrang
-bzw. höhere Priorität hat als die CSS-Regel im `<style>`-Element.
+Oben ist zu sehen, wie das `style`-Attribut des zweiten `<h1>`-Elements eine
+höhere Priorität hat als die CSS-Regel im `<style>`-Element. Daher erscheint
+dieses Element in blauer Schriftfarbe und nicht in rot wie die anderen beiden.
 
-Im Folgenden werden HTML-Fragmente und CSS-Regeln für eine bessere Übersichtlichkeit
-voneinander getrennt erscheinen:
+Im Folgenden werden kleinere HTML-Fragmente und die beispielhaften CSS-Regeln
+für eine bessere Übersichtlichkeit voneinander getrennt erscheinen:
 
 <Codepen id="abOwNRp" height="280" />
 
