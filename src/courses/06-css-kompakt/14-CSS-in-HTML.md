@@ -12,7 +12,7 @@ Es gibt zwei Möglichkeiten, CSS-Regeln direkt in HTML-Dokumenten zu definieren:
 
 **Bemerkung:** In der praktischen Webentwicklung werden Stylesheets in der Regel
 in eigenen CSS-Dateien getrennt vom HTML-Dokument definiert. Dies wird
-in einem [späteren Artikel](../html-und-css) beschrieben.
+im [folgenden Artikel](../html-und-css) beschrieben.
 
 Hier werden die beiden Ansätze `<style>`-Element und `style`-Attribut kurz
 erläutert, da sie manchmal praktisch für schnelle Experimente mit CSS
@@ -53,7 +53,9 @@ aus. Alternativ oder zusätzlich dazu können auch einzelne HTML-Elemente im
 `body` direkt mit einem `style`-Attribut ausgestattet werden:
 
 ```html
-<h1 style="color: red; font-size: 68px;">Eine Überschrift</h1>
+<h1 style="color: red; text-decoration: underline;">
+  Eine Überschrift
+</h1>
 ```
 
 In diesem Fall werden lediglich einzelne CSS-Deklarationen ohne Selektor
