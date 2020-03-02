@@ -78,19 +78,25 @@ dass diese Art von Selektor _alle_ Elemente eines konkreten Tags auswählt.
 Andere Selektoren wirken sich dagegen nur auf bestimmte oder einzelne Elemente aus,
 wie wir noch sehen werden.
 
-### Elementtypen aufzählen
+### Mehrere Selektoren anwenden
 
-Eine Erweiterung des Elementtypselektors ist die Aufzählung mehrerer
-Tagnamen. Dies geschieht dadurch die Auflistung gewünschter Tagnamen
-durch Kommas voneinander getrennt:
+Es ist möglich, eine Regel für mehrere Selektoren
+anzuwenden, indem verschiedene Selektoren durch
+Kommas voneinander getrennt angegeben werden::
 
 ```css
-elemtype1, elemtype2 /* , usw. ... */ {
+selector1, selector2 /* , usw. ... */ {
   /* Deklarationen dieser Regel */
 }
 ```
 
-Dadurch keine eine Regel auf _alle_ Elemente mehrerer Tags angewendet werden.
+Dadurch werden alle Selektoren dieser „Auflistung“ ausgeführt
+und die zugehörige Regel wird auf alle ausgewählten Elemente
+angewandt.
+
+Eine Erweiterung des Elementtypselektors wäre somit z.B. die Aufzählung mehrerer
+Tagnamen. Dies geschieht dadurch die Auflistung gewünschter Tagnamen
+durch Kommas voneinander getrennt. Dadurch wird eine Regel auf _alle_ Elemente mehrerer Tags angewendet.
 Es wäre also z.B. möglich, durch folgende Regel alle Überschriften des Typs
 `<h1>`, `<h2>` und `<h3>` gleichförmig anzupassen:
 
@@ -101,6 +107,11 @@ h1, h2, h3 {
 }
 ```
 <!-- prettier-ignore-end -->
+
+**Bemerkung:** Es können beliebige Selektoren
+in solch einer „Auflistung“ enthalten sein &mdash;
+auch solche, die `id`- oder `class`-Attributwerte
+enthalten (wie unten besprochen).
 
 ### id-Attributwerte
 
