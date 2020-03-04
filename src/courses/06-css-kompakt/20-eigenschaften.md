@@ -9,6 +9,9 @@ CSS hält unzählige Eigenschaften zur Gestaltung von HTML
 bereit. Hier sollen nun u.a. einige häufig verwendete Beispiele im Bereich der
 Schriftdarstellung und Größenangaben vorgestellt werden.
 
+Anders als bei Attributen von HTML-Elementen werden die Werte von CSS-Eigenschaften
+in Deklarationen ohne Anführungszeichen angegeben.
+
 ### Schriften
 
 Es gibt zahlreiche Möglichkeiten, mit CSS Einfluss auf die Darstellung von Text im
