@@ -23,7 +23,7 @@ haben insbesondere eine interaktive JavaScript-Konsole.
 
 ### Online-Entwicklungsumgebungen
 
-- [CodeSanbox (https://jsbin.com)](https://jsbin.com)
+- [JS Bin (https://jsbin.com)](https://jsbin.com)
 - [CodeSanbox (https://codesandbox.io)](https://codesandbox.io)
 - [StackBlitz (https://stackblitz.com)](https://stackblitz.com)
 - [Repl.it (https://repl.it)](https://repl.it)
