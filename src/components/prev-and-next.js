@@ -27,7 +27,7 @@ export default ({ prev = null, next = null }) => {
   // TODO: could we get rid of this with better styling?
   if (!prev) {
     return (
-      <SingleNextLink>
+      <SingleNextLink className="prev-next-links">
         <Link to={next.link}>
           {next.title}
           <LinkTitle>&nbsp; &#10230;</LinkTitle>
@@ -37,7 +37,7 @@ export default ({ prev = null, next = null }) => {
   }
 
   return (
-    <PrevAndNextLinks>
+    <PrevAndNextLinks className="prev-next-links">
       {prev && (
         <Link to={prev.link}>
           <LinkTitle>&#10229; &nbsp;</LinkTitle>

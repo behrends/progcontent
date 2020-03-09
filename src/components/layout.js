@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
+import './layout.css';
 import 'prismjs/themes/prism-coy.css';
 
 export default ({ children, indexLink }) => (
