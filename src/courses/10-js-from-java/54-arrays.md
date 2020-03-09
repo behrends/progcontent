@@ -24,4 +24,13 @@ console.log(myMixedList.length); // ==> 4
 
 // Arrays sind vom Typ 'object'
 console.log(typeof myList); // --> 'object'
+
+// Neuen Eintrag ans Ende des Array anhängen:
+myList.push(6);
+// ---> nun gilt myList === [1,2,3,4,5,6]
+// myList ist zwar eine Konstante aber dies ist erlaubt
+// die eigentliche Zuweisung der Konstanten bleibt erhalten
+// nur das konkrete, zugewiesene Array ändert sich
+
+// --> es gibt viele weitere Methoden für Arrays
 ```

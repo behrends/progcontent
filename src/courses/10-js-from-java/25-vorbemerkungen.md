@@ -113,6 +113,7 @@ eine Erweiterung von JavaScript und abwärtskompatibel, d.h.
 JavaScript-Code ist bereits TypeScript-Code.
 
 ```js
-let x = 123; // x ist vom Typ number
-x = 'Hallo'; // --> type error
+// dieses Beispiel bezieht sich auf TypeScript (nicht auf JavaScript!)
+let x = 123; // in TypeScript ist x nun vom Typ number
+x = 'Hallo'; // --> type error (in TypeScript - nicht in JavaScript!)
 ```

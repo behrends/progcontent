@@ -6,7 +6,7 @@ title: Schleifen (while und for)
 **Vorbemerkung:** Auch bei den Schleifenbedingungen werden JavaScript-Ausdrücke bei Bedarf in
 Wahrheitswerte umgewandelt (siehe die Beschreibungen zu „_truthy_“ und „_falsy_“ bei [Verzweigungen](../if_else)).
 
-### `while`
+### while
 
 Im Prinzip wie in Java
 
@@ -27,7 +27,7 @@ while (x > 0) {
 }
 ```
 
-### `for`
+### for
 
 Im Prinzip wie in Java &mdash; nur ohne Typangaben bei der Initialisierung.
 

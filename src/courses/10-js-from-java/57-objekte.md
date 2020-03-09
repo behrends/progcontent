@@ -4,7 +4,7 @@ title: Objekte
 ---
 
 In JavaScript lassen sich mit Objekten beliebige Werte zusammenfassen.
-Die Werte sind in Objekten bestimmten Schlüsseln bzw. Eigenschaften zugeordnet.  
+Die Werte sind in Objekten bestimmten Schlüsseln bzw. Eigenschaften zugeordnet.
 Objekte werden mit geschweiften Klammern deklariert:
 
 ```js

@@ -27,7 +27,8 @@ otherVar = true;
 otherVar = 321;
 
 // Variablen sind Namen, an die Werte gebunden werden
-// Variablen haben keine Typen — nur die an Variablen gebundenen Werte
+// Variablen haben keine Typen — nur die an Variablen
+// gebundenen Werte
 let x;
 x = 1; // x hat einen Wert vom Typ number
 x = 'Hallo'; // x hat einen Wert vom Typ string
@@ -35,10 +36,10 @@ x = 'Hallo'; // x hat einen Wert vom Typ string
 // Konstanten
 const localConstant = 3.1415;
 // Konstanten darf kein neuer Wert zugewiesen werden
-// localConstant = 123; // --> type error
+// localConstant = 123; // --> Fehler
 
 // Konstanten benötigen bei der Deklaration einen Wert
-// const otherConstant; // --> syntax error
+// const otherConstant; // --> Fehler
 ```
 
 ### Bezeichner
@@ -57,9 +58,9 @@ const name_$123 = 'name_$123';
 const $1 = 1;
 
 // Nicht als Bezeichner erlaubt:
-// const 1Name;  // syntax error (Bezeichner darf nicht mit Zahl beginnen)
-// let Gibt's-nicht; // syntax error (unzulässige Zeichen im Bezeichner)
-// const class = 1; // syntax error (class ist reserviertes Schlüsselwort)
+// const 1Name; // Fehler: Bezeichner darf nicht mit Zahl beginnen
+// let Gibt's-nicht; // Fehler: unzulässige Zeichen im Bezeichner
+// let class = 1; // Fehler: class ist reserviertes Schlüsselwort
 ```
 
 **Hinweis:** Es gibt auch die Möglichkeit, Variablen mit `var` zu deklarieren, was hier

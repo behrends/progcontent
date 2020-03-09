@@ -17,8 +17,8 @@ if( ...ein logischer Ausdruck X... ) {
   // wenn X und Y falsch (false) sind und Z wahr (true) ist
   // es können mehrere else if Blöcke folgen
 } else {
-  // Anweisungen in diesem Block werden ausgeführt, wenn
-  // alle Bedingungen in den if und else if Blöcken falsch (false) sind
+  // Anweisungen in diesem Block werden ausgeführt, wenn alle
+  // Bedingungen der if und else if Blöcke falsch (false) sind
 }
 ```
 
