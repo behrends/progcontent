@@ -3,6 +3,8 @@ templateKey: markdown-unit
 title: Elemente und Tags
 ---
 
+import MultipleChoice from "../../components/multiple-choice"
+
 Ein HTML-Dokument ist ein Text-Dokument, das einerseits aus den darzustellenden Inhalten
 (Text, Links, usw.) besteht und andererseits bestimmte Elemente zur Auszeichnung
 der unterschiedlichen Inhaltstypen enthält. Außerdem können
@@ -116,3 +118,5 @@ Elemente kennenzulernen, d.h. was diese im HTML-Dokument bewirken und wie sie
 verwendet werden. Im weiteren Verlauf werden wir verschiedene HTML-Elemente
 besprechen und dabei auf ihre relevanten Attribute und mögliche
 Kindelemente hinweisen.
+
+<MultipleChoice question="Welches dieser Elemente ist ein korrektes h1-Element?" choices={['<h1>Titel<h1>','<h1>Titel</h1>','<h1 heading="Titel"/>']} answer='2'/>
