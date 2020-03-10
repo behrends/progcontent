@@ -4,8 +4,9 @@ title: Elemente und Tags
 ---
 
 Ein HTML-Dokument ist ein Text-Dokument, das einerseits aus den darzustellenden Inhalten
-(Text, Bilder, Links, usw.) besteht und andererseits bestimmte Elemente zur Auszeichnung
-der unterschiedlichen Inhaltstypen enthält. Soll eine Webseite z.B. eine Hauptüberschrift
+(Text, Links, usw.) besteht und andererseits bestimmte Elemente zur Auszeichnung
+der unterschiedlichen Inhaltstypen enthält. Außerdem können
+weitere Medien wie Bilder oder Videos eingebunden werden. Soll eine Webseite z.B. eine Hauptüberschrift
 haben, dann wird diese im HTML-Dokument in Textform so angegeben:
 
 ```html
@@ -13,7 +14,7 @@ haben, dann wird diese im HTML-Dokument in Textform so angegeben:
 ```
 
 Wird das zugehörige HTML-Dokument im Browser geladen, dann erscheint diese Überschrift
-vielleicht in dieser Darstellung:
+zum Beispiel in dieser Darstellung:
 
 <h1 style="font-family: serif;">Dies ist eine Überschrift</h1>
 
@@ -72,7 +73,7 @@ element_) von `head` und `body`, welche wiederum die Elternelemente von `title` 
 ![Hierarchische Struktur eines HTML-Dokuments](../../images/html/hierarchie.png)
 
 Das „oberste“ oder „äußerste“ Element in dieser Hierarchie bzw. Baumstruktur
-(`html` im Beispiel), wird auch **Wurzelelement** genannt (wie die Wurzel eines Baumes).
+(`html` im Beispiel), wird auch **Wurzelelement** genannt (in Anlehnung an die Wurzel eines Baumes).
 
 ### Leere Elemente
 
@@ -98,7 +99,7 @@ die bei anderen Elementen nicht vorhanden sind.
 So zeigt das folgende Beispiel ein `img`-Element für ein Bild oder Foto,
 das über das `src`-Attribut eingebunden wird und für das mit dem `style`-Attribut
 in CSS ein kleiner Abstand nach oben festgelegt wird. Das `src`-Attribut ist
-spezifisch bei `img`-Elemente und muss dort definiert werden, wohingegen es bei
+spezifisch bei `img`-Elementen und muss dort definiert werden, wohingegen es bei
 `h1`-Elementen keine Bedeutung hat.
 
 ```html
@@ -107,11 +108,11 @@ spezifisch bei `img`-Elemente und muss dort definiert werden, wohingegen es bei
 
 ![Attribute eines HTML-Elements](../../images/html/attribute.png)
 
-Wir werden das `img` später genauer betrachten.
+Wir werden das `img`-Element [später](../bilder) genauer betrachten.
 
 Manche Attribute sind bei der Verwendung eines Elements zwingend erforderlich
 und andere sind optional. HTML zu lernen bedeutet zu einem großen Teil, die benötigten
 Elemente kennenzulernen, d.h. was diese im HTML-Dokument bewirken und wie sie
 verwendet werden. Im weiteren Verlauf werden wir verschiedene HTML-Elemente
 besprechen und dabei auf ihre relevanten Attribute und mögliche
-Kindelementen hinweisen.
+Kindelemente hinweisen.

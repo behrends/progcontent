@@ -30,7 +30,7 @@ Blockelemente handelt. Ein Blockelement hat also immer einen Zeilenumbruch
 vor und nach dem Element.
 
 Bei inline Elementen ist dies nicht der Fall, wie folgendes Beispiel zeigen soll
-(auch wenn eigentlich von der Verwendung von `b`- und `i`-Elemente zugunsten von CSS
+(auch wenn eigentlich von der Verwendung von `b`- und `i`-Elemente zugunsten von [CSS](/css-kompakt)
 abgeraten wird):
 
 ```html
@@ -56,7 +56,7 @@ bewirken keine besondere Darstellung im Browser, außer dass `div` als
 allgemeines Blockelement Zeilenumbrüche davor und danach erzwingt
 &mdash; daher auch der Name `div` (_content division_). `span`
 hingegen ist ein allgemeines inline-Element ohne erzwungene
-Zeilenumbrüche (`span` kann hier als „Bereich“ übersetzt werden).
+Zeilenumbrüche (`span` könnte hier als „Bereich“ übersetzt werden).
 
 ```html
 <div>
@@ -86,4 +86,4 @@ bei den `span`- bzw. `div`-Elementen die speziellen Attribute
 </div>
 ```
 
-Dies wird im Kurs zu CSS genauer besprochen.
+Dies wird im Kurs zu [CSS](/css-kompakt) genauer besprochen.

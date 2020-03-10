@@ -67,7 +67,7 @@ Schrägstrich anzugeben, was häufig zu sehen ist:
 <!-- prettier-ignore-end -->
 
 Sind mehrere Leerzeichen oder Abstände erwünscht, dann kann dies einerseits
-mit CSS erreicht werden. Anderseits steht dazu auch mit _non breaking space_
+mit [CSS](/css-kompakt) erreicht werden. Anderseits steht dazu auch mit _non breaking space_
 eine spezielle Entity bereit:
 
 ```html
@@ -80,4 +80,4 @@ Dies erscheint in etwa so im Browser:
 Folgendes &nbsp;&nbsp;&nbsp; hat etwas mehr Abstand.
 </p>
 
-Mehr zu Entities in einem folgenden Artikel.
+Im folgenden Artikel steht mehr zu Entities.

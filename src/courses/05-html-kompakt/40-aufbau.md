@@ -10,9 +10,9 @@ beginnen:
 <!DOCTYPE html>
 ```
 
-Dieser `DOCTYPE` sollte genau in der obigen Form in der ersten Zeile des
+Dieser `DOCTYPE` sollte in der ersten Zeile des
 HTML-Dokuments stehen (zur Erinnerung: HTML-Dokumente sind im Prinzip
-bloß Text-Dokumente in einem bestimmten Format). Hierdurch wird das Dokument
+bloß Text-Dokumente in einem bestimmten Format). Durch den `DOCTYPE` wird das Dokument
 deutlich als HTML-Dokument gekennzeichnet.
 
 **Hinweis:** Auf das Ausrufungszeichen (`!`) ist zu achten: `<!DOCTYPE html>`.
@@ -40,7 +40,7 @@ Dieser Titel wird in der Tableiste des Browsers angezeigt. Oft finden
 sich innerhalb des `head`-Elements mehrere `meta`-Elemente, mit denen
 weitere Eigenschaften des Dokuments angegeben werden können. Hier werden
 wir nur die wichtigsten Elemente beschreiben, wie z.B. das `meta`-Element
-mit Attribut `charset`, wodurch im Dokument enthaltene Sonderzeichen (siehe Unicode)
+mit Attribut `charset`, wodurch im Dokument enthaltene Sonderzeichen
 korrekt interpretiert und dargestellt werden (z.B. Umlaute der deutschen Sprache).
 
 ```html
@@ -78,20 +78,6 @@ Elemente im HTML-Dokument:
 <h1 style="font-family: serif;">Dies ist die Hauptüberschrift</h1>
 <h2 style="font-family: serif;">Dies ist eine Zwischenüberschrift</h2>
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Titel wird im Browser-Tab angezeigt</title>
-  </head>
-  <body>
-    <h1>Dies ist die Hauptüberschrift</h1>
-    <h2>Dies ist eine Zwischenüberschrift</h2>
-  </body>
-</html>
-```
-
 ### Bemerkungen
 
 Leere Zeilen oder Leerzeichen anderer Art (sogenannter _whitespace_) im HTML-Dokument
@@ -107,7 +93,7 @@ einfacher Text in einem HTML-Element enthalten sein sollte.
 ### Kommentare
 
 Kommentare im HTML-Dokument, die nicht vom Browser angezeigt werden
-sollen können so angegeben werden:
+sollen, können so angegeben werden:
 
 ```html
 <!-- ich bin ein HTML-Kommentar-Element -->

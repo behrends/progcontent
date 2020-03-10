@@ -4,8 +4,8 @@ title: Listen und Aufzählungen
 ---
 
 HTML hat verschiedene Elemente für Listen und Aufzählungen.
-Dabei werden beide aber ziemlich ähnlich strukturiert. Es gibt
-Listen bei denen die Reihenfolge keine Rolle spielt. Diese
+Beide werden jedoch ziemlich ähnlich strukturiert. Es gibt
+Listen, bei denen die Reihenfolge keine Rolle spielt. Diese
 _unordered lists_ werden mit dem Tag `<ul>` deklariert. Einzelne
 Listeneinträge (_list items_) werden als `<li>`-Kindelemente
 von `<ul>` angegeben. Ein Beispiel könnte eine Einkaufsliste sein,

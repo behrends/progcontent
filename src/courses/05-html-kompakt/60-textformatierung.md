@@ -21,7 +21,7 @@ Dies wird <b>fett</b> gedruckt und dies erscheint <i>kursiv</i>.
 
 Allerdings wird davon abgeraten, Text auf diese Weise zu formatieren,
 denn für die Darstellung und Gestaltung von Text ist nicht HTML sondern
-CSS zuständig.
+[CSS](/css-kompakt) zuständig.
 
 Dennoch sind diese beiden Elemente nützliche Beispiele für die
 Schachtelungen von HTML-Elementen und Text, denn das `<p>`-Element
