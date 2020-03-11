@@ -14,7 +14,7 @@ bestehen und Bilder oder Links enthalten:
        <li>Umfangreiche Dokumentation</li>
        <li>Tutorials</li>       
     </ul>
-    &rarr; <a href="https://developer.mozilla.org">developer.mozilla.org</a>
+    &rarr; <a style="color: blue; text-decoration: underline; background-image: none" href="https://developer.mozilla.org">developer.mozilla.org</a>
   </li>
   <li>
     freeCodeCamp
@@ -22,7 +22,7 @@ bestehen und Bilder oder Links enthalten:
        <li>Verschiedene Programmierthemen online erlernen</li>
        <li>Interaktive Tutorials im Browser</li>       
     </ul>
-    &rarr; <a href="https://freecodecamp.org">freecodecamp.org</a>
+    &rarr; <a style="color: blue; text-decoration: underline; background-image: none" href="https://freecodecamp.org">freecodecamp.org</a>
   </li>
   <li>
     StackOverFlow
@@ -31,7 +31,7 @@ bestehen und Bilder oder Links enthalten:
        <li>hier werden oft Lösungen für Probleme gefunden</li>
        <li>daher sehr beliebt bei Programmieren</li>       
     </ul>
-    &rarr; <a href="https://stackoverflow.com">stackoverflow.com</a>
+    &rarr; <a style="color: blue; text-decoration: underline; background-image: none" href="https://stackoverflow.com">stackoverflow.com</a>
   </li>
 </ul>
 
@@ -41,7 +41,7 @@ Dies kann in einer Datei auf dem eigenen Computer erfolgen
 oder direkt im Browser bei [codepen.io](https://codepen.io)
 umgesetzt werden.
 
-Tipp: der Pfeil nach rechts vor den Webadressen ist eine Entity
+Tipp: der Pfeil nach rechts vor den Links ist eine Entity
 mit dem Namen _right arrow_.
 
 Eine erweitere Übung wäre, die Liste mit Bildern
