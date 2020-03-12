@@ -249,7 +249,3 @@ Oder als `button`-Element mit der Beschriftung als Textinhalt des Elements:
 
 Es gibt noch zahlreiche weitere Möglichkeiten, Benutzereingaben im Browser mit
 HTML-Formularen zu ermitteln, siehe die Referenz zu [Formularelementen bei MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Forms).
-
-```
-
-```
