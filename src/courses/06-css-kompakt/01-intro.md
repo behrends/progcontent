@@ -7,11 +7,12 @@ CSS steht für „_Cascading Style Sheets_“ und wird verwendet, um die Gestalt
 Darstellung von HTML-Dokumenten zu beeinflussen. Mit CSS ist es möglich, HTML-Dokumente
 in mehreren Varianten darzustellen, z.B. könnte ein HTML-Dokument im Browser anders erscheinen
 als wenn es auf Papier ausgedruckt wird. Diese verschiedenen Darstellungen
-werden durch unterschiedliche _Style Sheets_ erreicht, welche mit der Sprache CSS definiert
+werden durch sogenannte „_Style Sheets_“ erreicht (im Folgenden Stylesheets genannt),
+welche mit der Sprache CSS definiert
 werden. Der Begriff „_Cascading_“ (kaskadierend) bezieht sich auf die Eigenschaft von CSS, dass
 bestimmte CSS-Regeln Vorrang gegenüber anderen haben können. CSS ist also ebenso wie HTML keine
 Programmiersprache, aber auch keine _Markup Language_ wie HTML, sondern eine Sprache zur
-Definition von sogenannten „_Style Sheets_“.
+Definition von Stylesheets.
 
 Die erste offizielle Version von CSS ist 1996 veröffentlicht worden und wird seither beständig vom
 _[World Wide Web Consortium (W3C)](https://w3.org)_ weiterentwickelt. Im Vergleich zu HTML ist
@@ -31,7 +32,7 @@ h1 {
 Wird diese Regel auf ein HTML-Dokument angewendet, dann bewirkt diese, dass Hauptüberschriften
 (bzw. `h1`-Elemente) eine rote Schriftfarbe erhalten und unterstrichen dargestellt werden:
 
-<h1 style="font-family: serif; color: red; text-decoration: underline;">Eine Überschrift</h1>
+<h1 style="font-family: serif; color: red; text-decoration: underline;margin-top: 0px;">Eine Überschrift</h1>
 
 Grundlegend haben alle CSS-Regeln diesen Aufbau. Neben solchen einfach erscheinenden
 gestalterischen Aufgaben, kann mit CSS jedoch auch das Layout und die Anordnung von

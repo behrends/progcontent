@@ -23,7 +23,7 @@ Mit dem Attribut `rel="stylesheet"` wird dem Browser signalisiert, dass hier ein
 CSS-Dokument eingebunden wird und mit `href` kann genau wie bei
 gewöhnlichen Links (also `<a>`-Elementen in HTML) der Name der CSS-Datei
 auf dem gleichen Server oder eine URL zur Referenzierung einer CSS-Ressource
-im Web angegeben werden. Der Browser lädt diese CSS-Dateien automatisch  
+im Web angegeben werden. Der Browser lädt diese CSS-Dateien automatisch
 und wendet sie auf das HTML-Dokument an.
 
 Im folgenden Beispiel ist zu sehen, dass zwei Stylesheets referenziert werden:
@@ -46,7 +46,9 @@ Im folgenden Beispiel ist zu sehen, dass zwei Stylesheets referenziert werden:
 
 Hier wird zunächst eine CSS-Datei `normalize.css` referenziert und danach
 wird eine CSS-Datei `styles.css` eingebunden. Der Browser wendet die in diesen
-Dateien enthaltenen CSS-Regeln nacheinander auf das HTML-Dokument an.
+Dateien enthaltenen CSS-Regeln **nacheinander** auf das HTML-Dokument an, wodurch
+später ausgeführte Regeln evtl. die Auswirkungen zuvor definierte Regeln überschreiben
+(ein weiteres Beispiel für die „kaskadierende“ Eigenschaft von CSS).
 
 ### Browser-Stylesheets und Normalisierung
 

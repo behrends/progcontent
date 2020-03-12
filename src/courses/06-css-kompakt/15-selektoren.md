@@ -7,8 +7,8 @@ import Codepen from '../../components/codepen'
 
 Eine CSS-Regel besteht im Wesentlichen aus zwei Teilen, nämlich
 
-- einem Selektor am Anfang der Regel
-- und einer durch `;` voneinander getrennten Auflistung von Deklarationen innerhalb `{ ... }`.
+- einem Selektor am Anfang der Regel gefolgt von
+- einer durch `;` voneinander getrennten Auflistung von Deklarationen innerhalb `{ ... }`.
 
 CSS-Regeln haben also grundlegend diesen Aufbau:
 
@@ -61,7 +61,7 @@ elementname {
 
 Für `elementname` lassen sich alle im HTML-Dokument vorkommden Tagname
 einsetzen. Um also z.B. die Schriftfarbe von Text in _allen_ Paragraphen
-des HTML-Dokuments in blauer Farbe erscheinen zu lassen kann diese Regel
+des HTML-Dokuments in blauer Farbe erscheinen zu lassen, kann diese Regel
 genutzt werden:
 
 ```css
@@ -127,10 +127,10 @@ Element für eine CSS-Regel zu selektieren, kann ein `id`-Selektor eingesetzt we
 
 Dieser Art von Selektor beginnt also mit `#`, womit angezeigt wird, dass nun ein
 `id`-Attributwert folgt (hier `idval`). Dieser Selektor wählt genau das bzw.
-das zuerst gefundene HTML-Element aus, dass ein id`-Attribut mit diesem konkreten
+das zuerst gefundene HTML-Element aus, dass ein `id`-Attribut mit diesem konkreten
 Wert hat.
 
-Angenommen, wir haben einen Link (d.h. ein `a`-Element) im HTML-Dokument, das
+Angenommen, wir haben einen Link (d.h. ein `a`-Element) im HTML-Dokument, der
 mit einem `id`-Attribut mit Wert `logout` ausgestattet ist:
 
 ```html
@@ -146,7 +146,8 @@ Schriftfarbe darstellen:
 }
 ```
 
-Bei dieser Art von Selektor (`#idval`) spielt der Elementtyp keine Rolle.
+Wenn bei dieser Art von Selektor nur der Wert des
+`id`-Attributs angegeben wird (im Beispiel `#logout`), dann spielt der Elementtyp bzw. der Tagname keine Rolle.
 
 ### class-Attributwerte
 
@@ -169,7 +170,7 @@ des Attributs `class` der gewünschten HTML-Elemente.
 Angenommen es gibt mehrere Elemente im HTML-Dokument, die ähnlich
 gestaltet werden sollten. Dazu ein Beispiel:
 
-<Codepen id="QWbgaWp" height={340} defaultTabs="html,result" />
+<Codepen id="QWbgaWp" height={340} defaultTabs="css,result" />
 
 Hier werden also das erste und das letzte Element gewählt und mit einer
 orangenen Schriftfarbe ausgestattet, da beide Elemente ein `class`-Attribut
@@ -194,7 +195,7 @@ eines Elements `parentelem` ausgewählt werden sollen. Hierbei spielt also
 die Position der relevanten Elemente in der Hierarchie des HTML-Dokuments eine
 wesentliche Rolle.
 
-<Codepen id="JjdJMYx" height={340} defaultTabs="html,result" />
+<Codepen id="JjdJMYx" height={340} defaultTabs="css,result" />
 
 Dieses Beispiel selektiert also nur genau die `<span>`-Elemente innerhalb von
 `<p>`-Tags.
@@ -211,8 +212,8 @@ p.note {
 }
 ```
 
-oder alle Kindelement eines Elements mit `id`-Wert `specialitem` vom Typ
-`<span>` mit `class`-Attributwert `essential`:
+oder alle Kindelement eines Elements mit `id`-Wert `specialitem` mit Tagnamen
+`<span>`, die einen `class`-Attributwert `essential` haben:
 
 ```css
 #specialitem span.essential {

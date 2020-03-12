@@ -54,7 +54,7 @@ font-weight: bold; /* Fettdruck */
 Eine Besonderheit bei der Eigenschaft für die Schriftgröße (`font-size`) ist die
 Verwendung der Einheit `em`. Diese Größeneinheit ist relativ und bezieht sich auf
 die Größe des Fonts im Elternelement. Mit `font-size: 2em` wird also erreicht,
-dass die Schrift doppelt so groß ist wie die des Textes im umgebenden Element.
+dass die Schrift doppelt so groß ist wie die des Texts im umgebenden Element.
 
 Zum Beispiel beim
 [Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/font)

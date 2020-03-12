@@ -36,7 +36,7 @@ Somit besteht eine Deklaration also aus einer **Eigenschaft** (_property_) gefol
 von einem Doppelpunkt (`:`), auf den wiederum der **Wert** (_value_) der Eigenschaft
 folgt mit abschließendem Semikolon (`;`). Mit Eigenschaften wird bestimmt, welche
 Aspekte der Gestaltung durch diese Regel angepasst werden sollen. Dies könnte z.B.
-die Farbe der Schrift sein. Erreicht wird dies durch die Eigenschaft `color`.
+die Farbe der Schrift sein, für welche die Eigenschaft `color` bereitsteht.
 CSS legt auch fest, welche Werte für eine Eigenschaft in Frage kommen. Bei der
 Eigenschaft `color` ist dies ein Farbwert wie z.B. `red` oder ein hexadezimaler
 Farbwert wie z.B. `#FF0000`, der den gleichen Farbton wie `red` liefert. Eine
@@ -48,7 +48,7 @@ color: red;
 
 CSS definiert zahlreiche Eigenschaften für verschiedenste gestalterische Darstellungen.
 Wir werden in den nachfolgenden Artikeln einige wichtige Eigenschaften und ihre zulässigen
-Werte besprechen aber bei weitem nicht alle verfügbaren.
+Werte besprechen &mdash; aber bei weitem nicht alle verfügbaren.
 
 ### Selektoren (selectors)
 
@@ -68,9 +68,10 @@ h1 {
 ```
 
 Alle `<h1>`-Elemente des durch diese CSS-Regel betroffenen HTML-Dokuments erscheinen
-also unterstrichen und in roter Farbe:
+hierdurch unterstrichen und in roter Farbe:
 
-<h1 style="font-family: serif; color: red; text-decoration: underline;">Überschrift durch CSS angepasst</h1>
+<h1 style="font-family: serif; color: red; text-decoration: underline;margin-top: 0px;">Überschrift durch CSS angepasst</h1>
+<br/>
 
 Im Allgemeinen hat eine CSS-Regel also folgende Form:
 
@@ -82,12 +83,14 @@ selector {
 }
 ```
 
-Folgende Abbildung stellt nochmals die einzelnen Bestandteile einer CSS-Regel dar:
+Folgende Abbildung stellt nochmals die einzelnen Bestandteile einer CSS-Regel
+in einer Übersicht dar:
+<br/>
 
 ![CSS Regel](../../images/css/regel.png)
 
-Stylesheets enthalten natürlich mehr als nur eine Regel. Jede Regel wird als eigener
-Deklarationsblock in CSS angegeben:
+Ein Stylesheet wird in der Regel in einer eigenen Datei deklariert und enthält fast immer
+mehr als nur eine Regel. Jede Regel wird als eigener Deklarationsblock in CSS angegeben:
 
 ```css
 selector1 {

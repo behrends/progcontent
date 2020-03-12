@@ -60,14 +60,14 @@ aus. Alternativ oder zusätzlich dazu können auch einzelne HTML-Elemente im
 
 In diesem Fall werden lediglich einzelne CSS-Deklarationen ohne Selektor
 mit `;` voneinander getrennt als Textwert des `style`-Attributs angegeben.
-Diese Regeln wirken sich allerdings nur auf das konkrete HTML-Element aus,
-zu dem dieses `style`-Attribut gehört.
+Diese Regeln wirken sich allerdings ausschließlich auf das konkrete HTML-Element aus,
+zu dem dieses `style`-Attribut gehört. Andere Elemente werden hiervon nicht beeinflusst.
 
 Die CSS-Regeln eines `style`-Attributs haben Vorrang gegenüber allen anderen
 Ansätzen CSS zu deklarieren. Dies ist ein Beispiel für die „kaskadierende“ (_cascading_)
 Eigenschaft von CSS-Regeln.
 
-In den folgenden Artikeln werden einige Beispiel in Form von „Codepens“
+In den folgenden Artikeln werden einige Beispiele in Form von „Codepens“
 der Webanwendung [codepen.io](https://codepen.io) eingebettet. In Codepens
 können wir einzelne HTML-Fragment ohne `DOCTYPE`, `<html>`-, `<head>`-
 und `<body>`-Elemente deklarieren, um die wesentlichen Aspekte zu verdeutlichen:
