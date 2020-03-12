@@ -1,0 +1,122 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "t-BNulRAdu1kzW6m7prWj",
+      "type": "arrow",
+      "x": 313,
+      "y": 180,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#364fc7",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 729551380,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          269
+        ]
+      ],
+      "version": 122
+    },
+    {
+      "id": "rtKpdd1-Qu_8Nh9lgUA6h",
+      "type": "arrow",
+      "x": 333,
+      "y": 293,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 2033499980,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          256,
+          -1
+        ]
+      ],
+      "version": 96
+    },
+    {
+      "id": "4AMYXWS96McNJByc5SA0O",
+      "type": "text",
+      "x": 366,
+      "y": 184,
+      "width": 234,
+      "height": 25,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 932905477,
+      "points": [],
+      "version": 118,
+      "text": "flex-direction: row;",
+      "font": "20px Cascadia",
+      "baseline": 20
+    },
+    {
+      "id": "TkyYfxzlGIpYigGn9G9ol",
+      "type": "text",
+      "x": 409.5,
+      "y": 270.5,
+      "width": 110,
+      "height": 26,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1923468702,
+      "points": [],
+      "version": 107,
+      "text": "Hauptachse",
+      "font": "20px Virgil",
+      "baseline": 18
+    },
+    {
+      "id": "DNxvHG32vWk6zxjH_JLuD",
+      "type": "text",
+      "x": 323,
+      "y": 375,
+      "width": 100,
+      "height": 26,
+      "strokeColor": "#364fc7",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1626677220,
+      "points": [],
+      "version": 65,
+      "text": "Querachse",
+      "font": "20px Virgil",
+      "baseline": 18
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}
