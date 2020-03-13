@@ -105,7 +105,7 @@ flex-wrap: wrap;
 
 Das FlexBox-Layout bietet noch einige weitere Konfigurationsmöglichkeiten an. Siehe dazu die Dokumentation im Mozilla Developer Network (MDN) [hier](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) und [hier](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout).
 
-Ein ähnlich mächtige Alternative zum FlexBox-Layout ist das [GridLayout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
+Eine ähnlich mächtige Alternative zum FlexBox-Layout ist das [GridLayout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
 
 Mit der Eigenschaft `position` kann die Positionierung einzelner Elemente
 bestimmt werden, mehr dazu bei [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position).
