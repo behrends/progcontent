@@ -6,12 +6,6 @@ export default ({ id, height, defaultTabs }) => {
   let theDefaultTabs = defaultTabs || 'css,result';
   return (
     <>
-      <Helmet>
-        <script
-          async
-          src="https://static.codepen.io/assets/embed/ei.js"
-        />
-      </Helmet>
       <p
         className="codepen"
         data-height={theHeight}
@@ -31,6 +25,12 @@ export default ({ id, height, defaultTabs }) => {
         }}
         data-pen-title="Cascade"
       ></p>
+      <Helmet>
+        <script
+          async
+          src="https://static.codepen.io/assets/embed/ei.js"
+        />
+      </Helmet>
     </>
   );
 };
