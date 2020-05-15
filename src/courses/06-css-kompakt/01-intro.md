@@ -17,7 +17,7 @@ Definition von Stylesheets.
 Die erste offizielle Version von CSS ist 1996 veröffentlicht worden und wird seither beständig vom
 _[World Wide Web Consortium (W3C)](https://w3.org)_ weiterentwickelt. Im Vergleich zu HTML ist
 CSS bereits deutlich umfangreicher und komplexer. Das Grundprinzip von CSS ist zunächst relativ
-einfach, denn mit CSS werden lediglich einzelne Regeln deklariert, die dann auf das betroffene
+einfach, denn mit CSS werden lediglich einzelne Regeln deklariert, die vom Browser auf das betroffene
 HTML-Dokument angewendet werden.
 
 Betrachten wir z.B. folgende CSS-Regel:
