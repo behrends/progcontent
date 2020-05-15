@@ -3,14 +3,15 @@ templateKey: markdown-unit
 title: Einleitung
 ---
 
-HTML steht für „_Hypertext Markup Language_“. Der Begriff „_Markup Language_“ bedeutet „Auszeichnungssprache“, d.h. mit HTML können bestimmte Arten
-von Dokumenten beschrieben werden &mdash; sogenannte HTML-Dokumente.
+HTML steht für „_Hypertext Markup Language_“. Der Begriff „_Markup Language_“ bedeutet „Auszeichnungssprache“,
+d.h. mit HTML können bestimmte Arten von Dokumenten beschrieben werden &mdash; sogenannte HTML-Dokumente.
 Dies bedeutet insbesondere, dass HTML keine Programmiersprache ist. HTML-Dokumente
 sind Textdokumente in einem bestimmten Format, das aus verschiedenen Strukturelementen
-besteht. Die Verwendung dieser Elemente in HTML-Dokumenten wird von der _Markup Language_ HTML definiert. In den nachfolgenden Abschnitten wird es hauptsächlich um den Aufbau
+besteht. Die Verwendung dieser Elemente in HTML-Dokumenten wird von der _Markup Language_ HTML definiert.
+In den nachfolgenden Abschnitten wird es hauptsächlich um den Aufbau
 und die Verwendung dieser Elemente gehen.
 
-Mit „_Hypertext_“ (das „_HT_“ in HTML) wird ausgedrückt, dass Textdokumente im HTML-Format miteinander verknüpft werden können, was mit (_Hyper_-)Links erreicht werden kann. Im Webbrowser werden HTML-Dokumente dargestellt und wenn auf einen Link geklickt wird, wird das mit dem
+Mit „_Hypertext_“ (das „_HT_“ in HTML) ist gemeint, dass Textdokumente im HTML-Format miteinander verknüpft werden können, was mit (_Hyper_-)Links erreicht werden kann. Im Webbrowser werden HTML-Dokumente dargestellt und wenn auf einen Link geklickt wird, wird das mit dem
 Link verknüpfte HTML-Dokument im Webbrowser geladen und an Stelle das bisher dargestellten
 Dokuments angezeigt.
 
