@@ -21,7 +21,7 @@ export default ({ id, height, defaultTabs }) => {
           justifyContent: 'center',
           border: '2px solid',
           margin: '1em 0',
-          padding: '1em'
+          padding: '1em',
         }}
         data-pen-title="Cascade"
       ></p>
