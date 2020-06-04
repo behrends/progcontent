@@ -7,10 +7,9 @@ export default ({ data }) => {
     <Layout>
       <h1>Kursübersicht</h1>
       <p>
-        Hier gibt es Kurse zu den Themen Programmierung,
-        Webanwendungen (Frontend-Technologien) und mobiler
-        App-Entwicklung. Die Inhalte werden zur Zeit fortlaufend
-        ergänzt.
+        Hier gibt's Kurse zu den Themen Programmierung, Webanwendungen
+        (Frontend-Technologien) und mobiler App-Entwicklung. Die
+        Inhalte werden zur Zeit fortlaufend ergänzt.
       </p>
       {data.allMdx.edges.map(({ node }) => (
         <div key={node.id}>
