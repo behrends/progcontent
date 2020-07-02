@@ -7,6 +7,8 @@ title: Installation
 
 Installation für Windows und Mac.
 
+**Ziel:** git funktioniert auf dem eigenen Rechner
+
 Test einer erfolgreichen Installation:
 
 - Terminal/Konsole öffnen
