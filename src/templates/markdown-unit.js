@@ -3,21 +3,7 @@ import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import PrevAndNext from '../components/prev-and-next';
-
-export const ArticleTemplate = ({
-  title,
-  content,
-  contentComponent
-}) => {
-  const ActualContentComponent =
-    contentComponent || (({ children }) => <div>{children}</div>);
-  return (
-    <div>
-      <h1>{title}</h1>
-      <ActualContentComponent>{content}</ActualContentComponent>
-    </div>
-  );
-};
+import ArticleTemplate from '../components/article-template';
 
 const Unit = ({
   data: { mdx },

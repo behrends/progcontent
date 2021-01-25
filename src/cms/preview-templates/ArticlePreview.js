@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArticleTemplate } from '../../templates/markdown-unit';
+import ArticleTemplate from '../../components/article-template';
 
 const ArticlePreview = ({ entry, widgetFor }) => {
   return (
