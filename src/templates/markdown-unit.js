@@ -19,7 +19,7 @@ export const ArticleTemplate = ({
   );
 };
 
-export default ({
+const Unit = ({
   data: { mdx },
   pageContext: { next, prev, courseIndex }
 }) => {
@@ -36,6 +36,7 @@ export default ({
     </Layout>
   );
 };
+export default Unit;
 
 export const query = graphql`
   query($slug: String!) {

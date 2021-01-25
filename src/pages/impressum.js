@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-export default () => (
+const Impressum = () => (
   <Layout>
     <div>
       <h1>Impressum</h1>
@@ -126,3 +126,5 @@ export default () => (
     </div>
   </Layout>
 );
+
+export default Impressum;

@@ -4,7 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import UnitList from '../components/unit-list';
 
-export default ({ data: { mdx } }) => {
+const Course = ({ data: { mdx } }) => {
   return (
     <Layout>
       <div>
@@ -16,6 +16,7 @@ export default ({ data: { mdx } }) => {
     </Layout>
   );
 };
+export default Course;
 
 export const query = graphql`
   query($slug: String!) {

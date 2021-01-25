@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 
-export default ({ data }) => {
+const Idx = ({ data }) => {
   return (
     <Layout>
       <h1>Kursübersicht</h1>
@@ -22,6 +22,7 @@ export default ({ data }) => {
     </Layout>
   );
 };
+export default Idx;
 
 export const query = graphql`
   query {
