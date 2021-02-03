@@ -5,20 +5,16 @@ import Layout from '../components/layout';
 const Idx = ({ data }) => {
   return (
     <Layout>
-      <h1>Kursübersicht</h1>
-      <p>
-        Hier gibt's Kurse zu den Themen Programmierung, Webanwendungen
-        (Frontend-Technologien) und mobiler App-Entwicklung. Die
-        Inhalte werden zur Zeit fortlaufend ergänzt.
-      </p>
+      <div class="flex flex-wrap">
       {data.allMdx.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Link to={node.fields.slug}>
-            <h3>{node.frontmatter.title}</h3>
+        <div key={node.id} class="max-w-md mr-4 mb-4 p-2 bg-white rounded-xl shadow-md hover:bg-indigo-100 transform hover:scale-105">
+          <Link to={node.fields.slug} class="no-underline">
+            <h2 class="text-2xl">{node.frontmatter.title}</h2>
             <p>{node.frontmatter.description}</p>
           </Link>
         </div>
       ))}
+      </div>
     </Layout>
   );
 };

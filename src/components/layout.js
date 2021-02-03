@@ -2,36 +2,23 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
-import './layout.css';
+import './printLayout.css';
 import 'prismjs/themes/prism-coy.css';
 
 export default ({ children, indexLink }) => (
-  <div
-    style={{
-      margin: '0 auto',
-      maxWidth: 1080,
-      minHeight: '100vh',
-      padding: '0 1rem',
-      display: 'flex',
-      flexDirection: 'column'
-    }}
+  <div class="flex flex-col min-h-screen bg-gray-200"
   >
     <Helmet>
       <meta charSet="utf-8" />
       <title>Prog Content</title>
       <link rel="canonical" href="https://www.progcontent.com" />
     </Helmet>
-    <header>
+    <header class="w-screen mb-8 p-2 bg-gray-400">
       <Link to="/">Prog Content</Link>
       &nbsp;&nbsp;{indexLink}
     </header>
-    <div style={{ flex: 1 }}>{children}</div>
-    <footer
-      style={{
-        marginTop: '1rem',
-        textAlign: 'right'
-      }}
-    >
+    <div class="flex-1 px-8">{children}</div>
+    <footer class="mt-2 pr-2 text-right">
       &copy; {new Date().getFullYear()} &nbsp;
       <a href="https://www.behrends.io">Erik Behrends</a>
       &nbsp;&nbsp;&nbsp;
