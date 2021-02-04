@@ -14,7 +14,6 @@ const SingleNextLink = styled.div`
 
 const LinkTitle = styled.span`
   color: darkgrey;
-  margin-bottom: 0;
   font-size: 1.2em;
 `;
 

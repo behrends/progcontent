@@ -13,7 +13,7 @@ export default ({ children, indexLink }) => (
       <title>Prog Content</title>
       <link rel="canonical" href="https://www.progcontent.com" />
     </Helmet>
-    <header class="w-screen mb-8 p-2 bg-gray-400">
+    <header class="w-screen mb-2 p-2 bg-gray-400">
       <Link to="/">Prog Content</Link>
       &nbsp;&nbsp;{indexLink}
     </header>
