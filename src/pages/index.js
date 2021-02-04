@@ -1,20 +1,16 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import CourseCard from '../components/CourseCard';
 
 const Idx = ({ data }) => {
   return (
     <Layout>
-      <div className="flex flex-wrap">
-      {data.allMdx.edges.map(({ node }) => (
-        <div key={node.id} className="max-w-md mr-4 mb-4 p-2 bg-white rounded-xl shadow-md hover:bg-indigo-100 transform hover:scale-105">
-          <Link to={node.fields.slug} className="no-underline">
-            <h2 className="text-2xl">{node.frontmatter.title}</h2>
-            <p>{node.frontmatter.description}</p>
-          </Link>
+        <div className="grid grid-flow-row grid-rows-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {data.allMdx.edges.map(({ node }) => 
+            <CourseCard id={node.id} link={node.fields.slug} title={node.frontmatter.title} description={node.frontmatter.description}/>
+          )}
         </div>
-      ))}
-      </div>
     </Layout>
   );
 };

@@ -17,7 +17,7 @@ export default ({ children, indexLink }) => (
       <Link to="/">Prog Content</Link>
       &nbsp;&nbsp;{indexLink}
     </header>
-    <div className="flex-1 px-2">{children}</div>
+    <div className="flex-1 px-4">{children}</div>
     <footer className="mt-2 pr-2 text-right">
       &copy; {new Date().getFullYear()} &nbsp;
       <a href="https://www.behrends.io">Erik Behrends</a>
