@@ -33,6 +33,7 @@ export default ({ path, showStartButton }) => {
   );
   if (edges.length === 0) return null;
 
+  // HACK: don't know how to override theme styling in tailwind.config.js
   const startCourse = (
     <Link
       to={edges[0].node.fields.slug}
