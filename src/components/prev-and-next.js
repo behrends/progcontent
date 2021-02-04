@@ -1,54 +1,31 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
-
-const PrevAndNextLinks = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const SingleNextLink = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
-
-const LinkTitle = styled.span`
-  color: darkgrey;
-  font-size: 1.2em;
-`;
 
 export default ({ prev = null, next = null }) => {
-  if (!prev && !next) {
-    return null;
-  }
+  if (!prev && !next) return null;
 
-  // display single next link at righter end if no prev link
-  // TODO: could we get rid of this with better styling?
-  if (!prev) {
-    return (
-      <SingleNextLink className="prev-next-links">
-        <Link to={next.link}>
-          {next.title}
-          <LinkTitle>&nbsp; &#10230;</LinkTitle>
-        </Link>
-      </SingleNextLink>
-    );
-  }
+  let PrevLink = () => (
+    <Link to={prev.link} class="text-indigo-500 hover:text-indigo-700">
+      <span>&#10229; &nbsp;</span>
+      {prev.title}
+    </Link>
+  );
+
+  let NextLink = () => (
+    <Link to={next.link} class="text-indigo-500 hover:text-indigo-700">      
+      {next.title}
+      <span>&nbsp; &#10230;</span>
+    </Link>
+  );
+
+  // if prev/next null, create empty element to make justify-between work
+  if (!prev) PrevLink = () => <div/>;
+  if (!next) NextLink = () => <div/>;
 
   return (
-    <PrevAndNextLinks className="prev-next-links">
-      {prev && (
-        <Link to={prev.link}>
-          <LinkTitle>&#10229; &nbsp;</LinkTitle>
-          {prev.title}
-        </Link>
-      )}
-      {next && (
-        <Link to={next.link}>
-          {next.title}
-          <LinkTitle>&nbsp; &#10230;</LinkTitle>
-        </Link>
-      )}
-    </PrevAndNextLinks>
+    <div class="flex flex-row justify-between">
+      <PrevLink/>
+      <NextLink/>
+    </div>
   );
 };
