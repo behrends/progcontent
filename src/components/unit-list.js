@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
-export default ({ path }) => {
+export default ({ path, showStartButton }) => {
   const coursePath = '/src/courses' + path;
   const data = useStaticQuery(graphql`
     query {
       allMdx(
-        filter: {
-          frontmatter: { templateKey: { eq: "markdown-unit" } }
-        }
+        filter: { frontmatter: { templateKey: { eq: "markdown-unit" } } }
         sort: { fields: fileAbsolutePath, order: ASC }
       ) {
         edges {
@@ -35,15 +33,24 @@ export default ({ path }) => {
   );
   if (edges.length === 0) return null;
 
+  const startCourse = (
+    <Link
+      to={edges[0].node.fields.slug}
+      className="float-right rounded-xl p-2 bg-purple-600 hover:bg-purple-800"
+      style={{ color: '#FFF', textDecoration: 'none' }}
+    >
+      Kurs starten
+    </Link>
+  );
+
   return (
     <>
+      {showStartButton && startCourse}
       <h3>Inhalt</h3>
       <ul>
         {edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={node.fields.slug}>
-              {node.frontmatter.title}
-            </Link>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
           </li>
         ))}
       </ul>
