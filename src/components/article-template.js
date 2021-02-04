@@ -8,7 +8,7 @@ const ArticleTemplate = ({
   const ActualContentComponent =
     contentComponent || (({ children }) => <div>{children}</div>);
   return (
-    <div class="prose">
+    <div class="mx-auto prose prose-sm sm:prose lg:prose-lg xl:prose-2xl">
       <h1>{title}</h1>
       <ActualContentComponent>{content}</ActualContentComponent>
     </div>
