@@ -7,7 +7,7 @@ import UnitList from '../components/unit-list';
 const Course = ({ data: { mdx } }) => {
   return (
     <Layout>
-      <div class="mx-auto prose prose-sm sm:prose lg:prose-lg xl:prose-2xl">
+      <div className="mx-auto prose prose-sm sm:prose lg:prose-lg xl:prose-2xl">
         <h1>{mdx.frontmatter.title}</h1>
         <h2>{mdx.frontmatter.description}</h2>
         <MDXRenderer>{mdx.body}</MDXRenderer>

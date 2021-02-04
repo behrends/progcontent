@@ -5,14 +5,14 @@ export default ({ prev = null, next = null }) => {
   if (!prev && !next) return null;
 
   let PrevLink = () => (
-    <Link to={prev.link} class="text-indigo-500 hover:text-indigo-700">
+    <Link to={prev.link} className="text-indigo-500 hover:text-indigo-700">
       <span>&#10229; &nbsp;</span>
       {prev.title}
     </Link>
   );
 
   let NextLink = () => (
-    <Link to={next.link} class="text-indigo-500 hover:text-indigo-700">      
+    <Link to={next.link} className="text-indigo-500 hover:text-indigo-700">      
       {next.title}
       <span>&nbsp; &#10230;</span>
     </Link>
@@ -23,7 +23,7 @@ export default ({ prev = null, next = null }) => {
   if (!next) NextLink = () => <div/>;
 
   return (
-    <div class="flex flex-row justify-between">
+    <div className="flex flex-row justify-between">
       <PrevLink/>
       <NextLink/>
     </div>
