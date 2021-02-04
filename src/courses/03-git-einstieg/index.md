@@ -1,8 +1,9 @@
 ---
 templateKey: course-index
-title: git Einstieg - work in progress
+title: git
 description: >-
   Versionskontrolle mit git lernen
+wip: true
 ---
 
 Programmiererprojekte können durch ein System zur Versionskontrolle

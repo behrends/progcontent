@@ -6,11 +6,17 @@ import CourseCard from '../components/CourseCard';
 const Idx = ({ data }) => {
   return (
     <Layout>
-        <div className="grid grid-flow-row grid-rows-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {data.allMdx.edges.map(({ node }) => 
-            <CourseCard id={node.id} link={node.fields.slug} title={node.frontmatter.title} description={node.frontmatter.description}/>
-          )}
-        </div>
+      <div className="grid grid-flow-row grid-rows-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {data.allMdx.edges.map(({ node }) => (
+          <CourseCard
+            id={node.id}
+            link={node.fields.slug}
+            title={node.frontmatter.title}
+            description={node.frontmatter.description}
+            wip={node.frontmatter.wip}
+          />
+        ))}
+      </div>
     </Layout>
   );
 };
@@ -28,6 +34,7 @@ export const query = graphql`
           frontmatter {
             title
             description
+            wip
           }
           fields {
             slug

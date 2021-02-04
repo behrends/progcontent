@@ -1,8 +1,9 @@
 ---
 templateKey: course-index
-title: Programmieren lernen (mit JavaScript) - work in progress
+title: Programmieren lernen (mit JavaScript)
 description: >-
   Grundkonzepte des Programmierens am Beispiel von JavaScript
+wip: true
 ---
 
 In diesem Kurs werden die Grundkonzepte des Programmierens vermittelt.
