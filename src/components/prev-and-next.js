@@ -7,7 +7,7 @@ export default ({ prev = null, next = null }) => {
   let NavLink = ({ target, children }) => (
     <Link
       to={target}
-      className="text-sm lg:text-base text-indigo-500 hover:text-indigo-700"
+      className="align-text-top text-sm lg:text-base text-indigo-500 hover:text-indigo-700"
     >
       {children}
     </Link>
@@ -15,15 +15,15 @@ export default ({ prev = null, next = null }) => {
 
   let PrevLink = () => (
     <NavLink target={prev.link}>
-      <span>&#10229; &nbsp;</span>
-      {prev.title}
+      <span className="text-3xl md:text-base">&#10229; &nbsp;</span>
+      <span className="hidden md:inline">{prev.title}</span>
     </NavLink>
   );
 
   let NextLink = () => (
     <NavLink target={next.link}>
-      {next.title}
-      <span>&nbsp; &#10230;</span>
+      <span className="hidden md:inline">{next.title}</span>
+      <span className="text-3xl md:text-base">&nbsp; &#10230;</span>
     </NavLink>
   );
 
