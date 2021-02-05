@@ -4,28 +4,37 @@ import { Link } from 'gatsby';
 export default ({ prev = null, next = null }) => {
   if (!prev && !next) return null;
 
+  let NavLink = ({ target, children }) => (
+    <Link
+      to={target}
+      className="text-sm lg:text-base text-indigo-500 hover:text-indigo-700"
+    >
+      {children}
+    </Link>
+  );
+
   let PrevLink = () => (
-    <Link to={prev.link} className="text-indigo-500 hover:text-indigo-700">
+    <NavLink target={prev.link}>
       <span>&#10229; &nbsp;</span>
       {prev.title}
-    </Link>
+    </NavLink>
   );
 
   let NextLink = () => (
-    <Link to={next.link} className="text-indigo-500 hover:text-indigo-700">      
+    <NavLink target={next.link}>
       {next.title}
       <span>&nbsp; &#10230;</span>
-    </Link>
+    </NavLink>
   );
 
   // if prev/next null, create empty element to make justify-between work
-  if (!prev) PrevLink = () => <div/>;
-  if (!next) NextLink = () => <div/>;
+  if (!prev) PrevLink = () => <div />;
+  if (!next) NextLink = () => <div />;
 
   return (
     <div className="flex flex-row justify-between">
-      <PrevLink/>
-      <NextLink/>
+      <PrevLink />
+      <NextLink />
     </div>
   );
 };
