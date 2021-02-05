@@ -37,7 +37,7 @@ export default ({ path, showStartButton }) => {
   const startCourse = (
     <Link
       to={edges[0].node.fields.slug}
-      className="float-right rounded-xl p-2 bg-purple-600 hover:bg-purple-800"
+      className="float-right rounded-md p-2 bg-gradient-to-b from-purple-500 to-purple-700 hover:from-purple-700 hover:to-purple-900"
       style={{ color: '#FFF', textDecoration: 'none' }}
     >
       Kurs starten
