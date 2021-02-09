@@ -13,6 +13,7 @@ const Idx = ({ data }) => {
             link={node.fields.slug}
             title={node.frontmatter.title}
             description={node.frontmatter.description}
+            image={node.frontmatter.image}
             wip={node.frontmatter.wip}
           />
         ))}
@@ -35,6 +36,14 @@ export const query = graphql`
             title
             description
             wip
+            image {
+              childImageSharp {
+                fluid(maxHeight: 100, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluidLimitPresentationSize
+                }
+              }
+            }
           }
           fields {
             slug

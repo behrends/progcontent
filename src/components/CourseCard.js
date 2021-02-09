@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 
-const CourseCard = ({ id, link, title, description, wip }) => {
+const CourseCard = ({ id, link, title, description, image, wip }) => {
   const wipNote = (
     <p className="italic text-indigo-500">
       An diesem Kurs wird noch gearbeitet
@@ -13,8 +14,9 @@ const CourseCard = ({ id, link, title, description, wip }) => {
       key={id}
       className="p-2 bg-white rounded-xl shadow-md hover:bg-indigo-100 transition duration-300 ease-in-out transform hover:scale-105"
     >
-      <h2 className="text-2xl">{title}</h2>
-      <p>{description}</p>
+      <Img fluid={image.childImageSharp.fluid} />
+      <h2 className="text-4xl">{title}</h2>
+      <p className="text-xl">{description}</p>
       {wip && wipNote}
     </Link>
   );

@@ -1,8 +1,9 @@
 ---
 templateKey: course-index
-title: Programmieren lernen (mit JavaScript)
+title: Lerne Programmieren (mit JavaScript)
 description: >-
   Grundkonzepte des Programmierens am Beispiel von JavaScript
+image: ../../images/prog-js.png
 wip: true
 ---
 

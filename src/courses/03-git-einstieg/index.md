@@ -1,8 +1,9 @@
 ---
 templateKey: course-index
-title: git
+title: Einstieg in git
 description: >-
   Versionskontrolle mit git lernen
+image: ../../images/git-einstieg.png
 wip: true
 ---
 

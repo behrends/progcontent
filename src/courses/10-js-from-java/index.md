@@ -1,8 +1,9 @@
 ---
 templateKey: course-index
-title: JavaScript für Java-Devs
+title: JavaScript aus Java-Sicht
 description: >-
   Einstieg in JavaScript für Leute, die Java kennen.
+image: ../../images/js-from-java.png
 ---
 
 - Programmierkenntnisse in Java werden vorausgesetzt.

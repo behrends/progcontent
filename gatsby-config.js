@@ -8,6 +8,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-image`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -15,7 +17,7 @@ module.exports = {
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-prismjs`,
-            options: { noInlineHighlight: true }
+            options: { noInlineHighlight: true },
           },
           {
             resolve: `gatsby-remark-images`,
@@ -30,8 +32,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src`
-      }
+        path: `${__dirname}/src`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -42,16 +50,15 @@ module.exports = {
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
         display: `standalone`,
-        icon: `src/images/icon.png` // This path is relative to the root of the site.
-      }
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
     },
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`
-      }
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
     },
-    `gatsby-plugin-postcss`
-  ]
+  ],
 };

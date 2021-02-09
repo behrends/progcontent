@@ -3,6 +3,7 @@ templateKey: course-index
 title: CSS kompakt
 description: >-
   Ein kurze Einführung in CSS
+image: ../../images/css-kompakt.png
 ---
 
 Es werden nur die wichtigsten Grundlagen zu CSS behandelt, die benötigt werden,

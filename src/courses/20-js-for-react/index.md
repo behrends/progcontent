@@ -3,6 +3,7 @@ templateKey: course-index
 title: JavaScript für React (Native)
 description: >-
   Hier werden die Java-Script-Grundlagen für React (Native) gelegt.
+image: ../../images/js-for-react.png
 wip: true
 ---
 
