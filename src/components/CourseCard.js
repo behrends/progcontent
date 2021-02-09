@@ -12,7 +12,7 @@ const CourseCard = ({ id, link, title, description, image, wip }) => {
     <Link
       to={link}
       key={id}
-      className="p-2 bg-white rounded-xl shadow-md hover:bg-indigo-100 transition duration-300 ease-in-out transform hover:scale-105"
+      className="p-2 bg-white rounded-xl shadow-xl ring-1 ring-indigo-100 hover:bg-indigo-100 transition duration-300 ease-in-out transform hover:scale-105"
     >
       <Img fluid={image.childImageSharp.fluid} />
       <h2 className="text-4xl">{title}</h2>
