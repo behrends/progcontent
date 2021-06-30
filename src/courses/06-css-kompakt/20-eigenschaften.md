@@ -88,7 +88,7 @@ Bei den zulässigen Werten gilt das gleiche wie bei `color` &mdash; zur Beachtun
 `color` wirkt sich nur auf die Schriftfarbe aus.
 
 <!-- prettier-ignore -->
-export const css = ` #mybox { 
+export const css = `#mybox { 
   width: 180px;
   height: 80px;
   background-color: orange;
