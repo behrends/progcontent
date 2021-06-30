@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-export default ({ id, height, defaultTabs }) => {
+const CodePen = ({ id, height, defaultTabs }) => {
   let theHeight = height || 300;
   let theDefaultTabs = defaultTabs || 'css,result';
   return (
@@ -34,3 +34,5 @@ export default ({ id, height, defaultTabs }) => {
     </>
   );
 };
+
+export default CodePen;

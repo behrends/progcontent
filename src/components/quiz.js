@@ -8,7 +8,7 @@ function checkAnswer(answer) {
   alert(result);
 }
 
-export default ({ question, answer }) => {
+const Quiz = ({ question, answer }) => {
   if (!question || !answer)
     return <h3>Ich bin ein Quiz ohne Frage/Antwort!</h3>;
 
@@ -29,3 +29,5 @@ export default ({ question, answer }) => {
     </p>
   );
 };
+
+export default Quiz;

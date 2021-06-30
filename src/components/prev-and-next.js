@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-export default ({ prev = null, next = null }) => {
+const PrevAndNex = ({ prev = null, next = null }) => {
   if (!prev && !next) return null;
 
   let NavLink = ({ target, children }) => (
@@ -38,3 +38,5 @@ export default ({ prev = null, next = null }) => {
     </div>
   );
 };
+
+export default PrevAndNex;

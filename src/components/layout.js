@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import './printLayout.css';
 import 'prismjs/themes/prism-coy.css';
 
-export default ({ children, indexLink }) => (
+const Layout = ({ children, indexLink }) => (
   <div className="flex flex-col min-h-screen bg-gray-50">
     <Helmet>
       <meta charSet="utf-8" />
@@ -25,3 +25,5 @@ export default ({ children, indexLink }) => (
     </footer>
   </div>
 );
+
+export default Layout;

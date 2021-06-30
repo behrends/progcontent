@@ -10,7 +10,7 @@ function checkAnswer(answer) {
   alert(result);
 }
 
-export default ({ question, choices, answer }) => {
+const MultipleChoice = ({ question, choices, answer }) => {
   if (!question || !choices || !answer) return null;
 
   return (
@@ -55,3 +55,5 @@ export default ({ question, choices, answer }) => {
     </p>
   );
 };
+
+export default MultipleChoice;
