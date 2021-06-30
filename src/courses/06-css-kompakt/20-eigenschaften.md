@@ -3,7 +3,7 @@ templateKey: markdown-unit
 title: Beispiele häufiger Eigenschaften
 ---
 
-import Codepen from '../../components/codepen'
+import WebPlayground from '../../components/WebPlayground'
 
 CSS hält unzählige Eigenschaften zur Gestaltung von HTML
 bereit. Hier sollen nun u.a. einige häufig verwendete Beispiele im Bereich der
@@ -87,4 +87,11 @@ Mit `background-color` kann die Hintergrundfarbe eines HTML-Elements festgelegt 
 Bei den zulässigen Werten gilt das gleiche wie bei `color` &mdash; zur Beachtung:
 `color` wirkt sich nur auf die Schriftfarbe aus.
 
-<Codepen id="poJWyYY" height={200} defaultTabs="css,result" />
+<!-- prettier-ignore -->
+export const css = ` #mybox { 
+  width: 180px;
+  height: 80px;
+  background-color: orange;
+}`;
+
+<WebPlayground markup='<div id="mybox"/>' css={css} defaultEditorTab="css"/>
