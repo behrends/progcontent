@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CodeMirror */
+.cm-editor {
+  border: 1px solid silver;
+}
+.cm-editor.cm-focused {
+  outline: 2px solid rgb(99, 102, 241);
+}
