@@ -3,7 +3,7 @@ templateKey: markdown-unit
 title: CSS im HTML-Dokument
 ---
 
-import Codepen from '../../components/codepen'
+import WebPlayground from '../../components/WebPlayground'
 
 Es gibt zwei Möglichkeiten, CSS-Regeln direkt in HTML-Dokumenten zu definieren:
 
@@ -53,9 +53,7 @@ aus. Alternativ oder zusätzlich dazu können auch einzelne HTML-Elemente im
 `body` direkt mit einem `style`-Attribut ausgestattet werden:
 
 ```html
-<h1 style="color: red; text-decoration: underline;">
-  Eine Überschrift
-</h1>
+<h1 style="color: red; text-decoration: underline;">Eine Überschrift</h1>
 ```
 
 In diesem Fall werden lediglich einzelne CSS-Deklarationen ohne Selektor
@@ -67,12 +65,24 @@ Die CSS-Regeln eines `style`-Attributs haben Vorrang gegenüber allen anderen
 Ansätzen CSS zu deklarieren. Dies ist ein Beispiel für die „kaskadierende“ (_cascading_)
 Eigenschaft von CSS-Regeln.
 
-In den folgenden Artikeln werden einige Beispiele in Form von „Codepens“
-der Webanwendung [codepen.io](https://codepen.io) eingebettet. In Codepens
-können wir einzelne HTML-Fragment ohne `DOCTYPE`, `<html>`-, `<head>`-
-und `<body>`-Elemente deklarieren, um die wesentlichen Aspekte zu verdeutlichen:
+In den folgenden Artikeln werden einige Beispiele eingebettet. Diese können
+interaktiv verändert werden und zeigen das Ergebnis sofort an (einfach ausprobieren):
 
-<Codepen id="VwLWaxr" height="280" defaultTabs="html,result" />
+export const html = `<style>
+  h1 {
+    color: red;
+  }
+</style>
+<h1>Überschrift</h1>
+<h1 style="color: blue;">
+  Überschrift 2
+</h1>
+<h1>Überschrift 3</h1>`;
+
+<WebPlayground markup={html} />
+
+In diesen Beispielen können wir einzelne HTML-Fragment ohne `DOCTYPE`, `<html>`-, `<head>`-
+und `<body>`-Elemente deklarieren, um die wesentlichen Aspekte zu verdeutlichen.
 
 Oben ist zu sehen, wie das `style`-Attribut des zweiten `<h1>`-Elements eine
 höhere Priorität hat als die CSS-Regel im `<style>`-Element. Daher erscheint
@@ -81,9 +91,16 @@ dieses Element in blauer Schriftfarbe und nicht in rot wie die anderen beiden.
 Im Folgenden werden kleinere HTML-Fragmente und die beispielhaften CSS-Regeln
 für eine bessere Übersichtlichkeit voneinander getrennt erscheinen:
 
-<Codepen id="abOwNRp" height="280" />
+export const html2 = `<h1>Überschrift 1</h1>
+<h1 style="color: blue;">
+  Überschrift 2
+</h1>
+<h1>Überschrift 3</h1>`;
+
+export const css = `h1 {
+  color: red;
+}`;
+
+<WebPlayground markup={html2} css={css} defaultEditorTab="css"/>
 
 Es kann jedoch leicht zwischen den `HTML`- und `CSS`-Ansichten gewechselt werden.
-Außerdem lässt sich ein Codepen für eigene Experimente ändern und anpassen
-&mdash; dazu muss lediglich `EDIT ON CODEPEN` oben rechts im eingebetteten Codepen
-angeklickt werden.

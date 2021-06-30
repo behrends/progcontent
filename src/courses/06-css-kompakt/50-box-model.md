@@ -3,7 +3,7 @@ templateKey: markdown-unit
 title: Box model für Abstände und Ränder
 ---
 
-import Codepen from '../../components/codepen'
+import WebPlayground from '../../components/WebPlayground'
 
 Aus CSS-Sicht sind alle HTML-Elemente rechteckige „Boxen“ mit Rändern und
 Abständen nach außen und innen. Für die Ränder aller vier Seiten der Box
@@ -52,7 +52,18 @@ Bei einer Box gibt es den Außenabstand (`margin`) und den Innenabstand
 (`padding`). Zu beiden Eigenschaften werden meistens Werte in Pixeln
 angegeben:
 
-<Codepen id="mdJxqXE" height={240} defaultTabs="css,result" />
+export const html=`<div id="inner">
+  Inhalt der Box mit viel Padding
+</div>`;
+
+export const css=`#inner {
+  width: 50%; 
+  border: 3px solid blue; 
+  margin: 50px;
+  padding: 30px;  
+}`;
+
+<WebPlayground markup={html} css={css} defaultEditorTab="css"/>
 
 Obiges Beispiel zeigt, wie die Deklaration `margin: 50px` die
 gesamte Box ausgehend vom Rand mit Abstand zur Umgebung versetzt.
@@ -64,9 +75,23 @@ dann stehen hierfür die Eigenschaften `padding-top/-bottom/-left/-right`
 bzw. `margin-top/-bottom/-left/-right` bereit. Hier sind ein paar dieser
 Eigenschaften im Einsatz:
 
-<Codepen id="NWqYwBX" height={300} defaultTabs="css,result" />
+export const html2=`<div id="inner">
+  Box mit unterschiedlichen Abständen
+</div>`;
 
-Durch Experimentieren mit den Codepens können die Auswirkungen dieser
+export const css2=`#inner {
+  width: 50%; 
+  border: 3px solid blue; 
+  margin-top: 10px;
+  margin-left: 50px;
+  padding-top: 30px;  
+  padding-bottom: 10px;  
+  padding-left: 15px;  
+}`;
+
+<WebPlayground markup={html2} css={css2} defaultEditorTab="css"/>
+
+Durch Experimentieren mit den Beispielen können die Auswirkungen dieser
 Eigenschaften leicht nachvollzogen werden.
 
 ### Bemerkungen zum vertikalen Abstand
@@ -77,6 +102,25 @@ die untere Box mit `margin-top` einen äußeren Abstand nach oben hat, dann
 werden diese beiden vertikalen Abstände **nicht** addiert, sondern
 nur der größere der beiden Abstände wirkt sich aus. Der tatsächliche Abstand
 der beiden Boxen im folgenden Beispiel sind nicht 70 sondern nur 50 Pixel.
-Auch hierbei können eigene Änderungen am Codepen das Verständnis erleichtern.
+Auch hierbei können eigene Änderungen am Beispiel das Verständnis erleichtern.
 
-<Codepen id="xxGWpKb" height={360} defaultTabs="css,result" />
+export const html3=`<div id="upper">
+  Obere Box
+</div>
+<div id="lower">
+  Untere Box
+</div>`;
+
+export const css3=`div {
+  width: 30%;
+  height: 50px;
+  border: 2px solid red;
+}
+#upper {
+  margin-bottom: 50px;
+}
+#lower {
+  margin-bottom: 20px;
+}`;
+
+<WebPlayground markup={html3} css={css3} defaultEditorTab="css"/>

@@ -3,7 +3,7 @@ templateKey: markdown-unit
 title: Kaskade und Spezifizität
 ---
 
-import Codepen from '../../components/codepen'
+import WebPlayground from '../../components/WebPlayground'
 
 Oft werden mehrere Stylesheets verwendet und es kann auch sein, dass
 die Selektoren verschiedener Regeln die gleichen Elemente auswählen.
@@ -27,7 +27,20 @@ von Stylesheets durch `link`-Elemente im HTML-Dokument bestimmt.
 
 Ein einfaches Beispiel:
 
-<Codepen id="BaNReRO" height={340} />
+export const html=`<h1>Eine Überschrift</h1>`;
+
+export const css=`h1 {
+  color: red;
+  text-decoration: underline;
+}
+h1 {
+  color: blue;
+}
+h1 {
+  font-size: 40px;
+}`;
+
+<WebPlayground markup={html} css={css} defaultEditorTab="css"/>
 
 Hier wird zunächst die erste Regel angewendet, wodurch die Überschrift unterstrichen
 und in roter Farbe erscheint. Jedoch bewirkt die nachfolgende Regel, dass die Schrift
@@ -55,7 +68,28 @@ nur folgendes:
 
 Dazu ein Beispiel:
 
-<Codepen id="BaNrJEM" height={340} />
+export const html2=`<p id="myid" class="myclass">
+  Mit id und class
+</p>
+<p class="myclass">
+  Nur mit class
+</p>
+<p>
+  Ohne id und class
+</p>`;
+
+export const css2=`#myid {
+  color: red;
+}
+.myclass {
+  color: orange;
+}
+p {
+  font-size: 24px;
+  color: blue;
+}`;
+
+<WebPlayground markup={html2} css={css2} defaultEditorTab="css"/>
 
 Hier setzt sich aufgrund der höheren Spezifizität die Regel mit dem
 `id`-Selektor beim ersten Element durch, obwohl diese Regel ganz am

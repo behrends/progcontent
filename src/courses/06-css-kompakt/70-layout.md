@@ -3,7 +3,7 @@ templateKey: markdown-unit
 title: Layout mit FlexBox
 ---
 
-import Codepen from '../../components/codepen'
+import WebPlayground from '../../components/WebPlayground'
 
 Mit dem sogenannten FlexBox-Layout kann für verschiedene
 Display-Größen (Laptop, Smartphone, usw.) eine automatisch passende
@@ -14,7 +14,26 @@ in diesem Element enthaltenen Kindelemente festzulegen.
 
 Betrachten wir folgendes Beispiel:
 
-<Codepen id="poJLwbp" height={340} defaultTabs="html,result" />
+export const html=`<div id="container">
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+  <div id="three" class="box"></div>
+</div>`;
+
+export const css=`.box { 
+  width: 80px;
+  height: 80px;
+}
+#one { background-color: cyan; }
+#two { background-color: magenta; }
+#three { background-color: orange; }
+#container {
+  height: 400px;
+  border: 3px solid green;
+}`;
+
+<WebPlayground markup={html} css={css} defaultEditorTab="css"/>
+
 
 Dort sehen wir ein `<div>`-Element mit dem `id`-Attributwert `container`
 und weiteren Kindelementen.
@@ -34,7 +53,27 @@ display: flex;
 
 Fügen wir also diese Deklaration dem CSS im Beispiel hinzu:
 
-<Codepen id="jOPzwya" height={350} defaultTabs="css,result" />
+export const html2=`<div id="container">
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+  <div id="three" class="box"></div>
+</div>`;
+
+export const css2=`.box { 
+  width: 80px;
+  height: 80px;
+}
+#one { background-color: cyan; }
+#two { background-color: magenta; }
+#three { background-color: orange; }
+#container {
+  display: flex;
+  height: 400px;
+  border: 3px solid green;
+}`;
+
+<WebPlayground markup={html2} css={css2} defaultEditorTab="css"/>
+
 
 Nun ist zu sehen, dass die drei Quadrate horizontal ausgerichtet werden.
 Für das Container-`div`-Element ist nun die FlexBox aktiv. Die Anordnung
@@ -52,7 +91,27 @@ Hauptachse von oben nach unten bzw. vertikal.
 
 ![Flex Direction Column](../../images/css/flex-direction-column.png)
 
-<Codepen id="rNVdwgg" height={360} defaultTabs="css,result" />
+export const html3=`<div id="container">
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+  <div id="three" class="box"></div>
+</div>`;
+
+export const css3=`.box { 
+  width: 80px;
+  height: 80px;
+}
+#one { background-color: cyan; }
+#two { background-color: magenta; }
+#three { background-color: orange; }
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  border: 3px solid green;
+}`;
+
+<WebPlayground markup={html3} css={css3} defaultEditorTab="css"/>
 
 In unserem Beispiel hat dies die Auswirkung, dass die drei Quadrate nun
 vertikal von oben nach unten angeordnet werden. Würde in dem obigen
@@ -75,7 +134,29 @@ auf der Querachse zentriert angeordnet werden.
 Folgendes Beispiel zeigt die Kombination von `justify-content: space-around` und
 `align-items: center`:
 
-<Codepen id="YzXQYxX" height={480} defaultTabs="css,result" />
+export const html4=`<div id="container">
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+  <div id="three" class="box"></div>
+</div>`;
+
+export const css4=`.box { 
+  width: 80px;
+  height: 80px;
+}
+#one { background-color: cyan; }
+#two { background-color: magenta; }
+#three { background-color: orange; }
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  border: 3px solid green;
+}`;
+
+<WebPlayground markup={html4} css={css4} defaultEditorTab="css"/>
 
 Einige Eigenschaften stehen für die Anordnung auf den beiden Achsen
 zur Verfügung, ein paar relevante Beispiele:
@@ -85,7 +166,7 @@ zur Verfügung, ein paar relevante Beispiele:
 
 Die Verwendung des FlexBox-Layouts kann gut dadurch erlernt werden, wenn
 mit den verschiedenen Eigenschaften und Werten experimentiert wird, wozu
-sich das obige Codepen-Beispiel gut eignet.
+sich das obige Beispiel gut eignet.
 
 ### flex-wrap
 

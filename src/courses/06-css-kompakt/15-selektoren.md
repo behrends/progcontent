@@ -3,7 +3,7 @@ templateKey: markdown-unit
 title: Selektoren
 ---
 
-import Codepen from '../../components/codepen'
+import WebPlayground from '../../components/WebPlayground'
 
 Eine CSS-Regel besteht im Wesentlichen aus zwei Teilen, nämlich
 
@@ -170,7 +170,24 @@ des Attributs `class` der gewünschten HTML-Elemente.
 Angenommen es gibt mehrere Elemente im HTML-Dokument, die ähnlich
 gestaltet werden sollten. Dazu ein Beispiel:
 
-<Codepen id="QWbgaWp" height={340} defaultTabs="css,result" />
+export const html = `<p class="highlight">
+  Hier steht etwas wichtiges
+</p>
+<div>
+  Dies ist nicht so wichtig.
+</div>
+<p>
+  Und dies schon gar nicht.
+</p>
+<div class="highlight">
+  Dies aber muss betont werden.
+</div>`;
+
+export const css = `.highlight { 
+  color: orange;
+}`;
+
+<WebPlayground markup={html} css={css} defaultEditorTab="css"/>
 
 Hier werden also das erste und das letzte Element gewählt und mit einer
 orangenen Schriftfarbe ausgestattet, da beide Elemente ein `class`-Attribut
@@ -195,7 +212,24 @@ eines Elements `parentelem` ausgewählt werden sollen. Hierbei spielt also
 die Position der relevanten Elemente in der Hierarchie des HTML-Dokuments eine
 wesentliche Rolle.
 
-<Codepen id="JjdJMYx" height={340} defaultTabs="css,result" />
+export const html2 = `<p>
+  Dies ist ein Text mit <span>wichtigen</span> 
+  und <span>relevanten</span> Teilen ...
+</p>
+<span>Dies ist unwichtig</span>
+<div>
+  <span>Dies auch</span>
+</div>
+<p>
+  Noch etwas <span>besonderes</span>
+  in diesem Absatz.
+</p>`;
+
+export const css2 = `p span {
+  color: red;
+}`;
+
+<WebPlayground markup={html2} css={css2} defaultEditorTab="css"/>
 
 Dieses Beispiel selektiert also nur genau die `<span>`-Elemente innerhalb von
 `<p>`-Tags.
