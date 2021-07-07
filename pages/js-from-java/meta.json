@@ -1,0 +1,16 @@
+{
+  "index": "Einleitung",
+  "intro": "Einstieg",
+  "editoren": "Editoren",
+  "lernressourcen": "Lernressourcen",
+  "vorbemerkungen": "Vorbemerkungen",
+  "ausgabe_eingabe": "Ausgaben / Eingaben",
+  "variablen_konstanten": "Variablen und Konstanten",
+  "datentypen": "Datentypen",
+  "operatoren": "Operatoren",
+  "arrays": "Arrays",
+  "objekte": "Objekte",
+  "funktionen": "Funktionen",
+  "if_else": "if … else",
+  "schleifen": "Schleifen"
+}

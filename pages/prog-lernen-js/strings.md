@@ -1,0 +1,1 @@
+# Texte werden Strings genannt

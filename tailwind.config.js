@@ -1,27 +1,12 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  mode: 'jit',
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      typography: {
-        DEFAULT: {
-          css: {
-            color: '#333',
-            a: {
-              color: '#6366F1', // indigo-500
-              '&:hover': {
-                color: '#4338CA', // indigo-700
-              },
-            },
-          },
-        },
-      }
-    },
+    extend: {},
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/typography')
-  ]
+  plugins: [],
 }

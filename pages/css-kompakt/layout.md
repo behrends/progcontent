@@ -1,0 +1,205 @@
+import WebPlayground from '../../components/WebPlayground'
+
+# Layout mit FlexBox
+
+Mit dem sogenannten FlexBox-Layout kann für verschiedene
+Display-Größen (Laptop, Smartphone, usw.) eine automatisch passende
+Anordnung der HTML-Elemente erreicht werden.
+
+FlexBox wird angewendet auf beliebige HTML-Elemente, um das Layout der
+in diesem Element enthaltenen Kindelemente festzulegen.
+
+Betrachten wir folgendes Beispiel:
+
+<WebPlayground 
+  markup={
+`<div id="container">
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+  <div id="three" class="box"></div>
+</div>`    
+  } 
+  css={
+`.box { 
+  width: 80px;
+  height: 80px;
+}
+#one { background-color: cyan; }
+#two { background-color: magenta; }
+#three { background-color: orange; }
+#container {
+  height: 400px;
+  border: 3px solid green;
+}`    
+  } 
+  defaultEditorTab="css"
+/>
+
+
+Dort sehen wir ein `<div>`-Element mit dem `id`-Attributwert `container`
+und weiteren Kindelementen.
+Da solche Elemente andere Elemente enthalten, werden diese oft „Container“-Elemente
+genannt. Hier enthält das Container-Element drei weitere `<div>`-Kindelemente,
+welche durch das CSS als drei Quadrate in verschiedenen Farben erscheinen. Mit
+diesem Beispiel soll nun das FlexBox-Layout erläutert werden.
+
+Um das FlexBox-Layout für das Container-Element zu aktivieren, muss auf dieses
+Element folgende CSS-Deklaration angewendet werden:
+
+## FlexBox und flex-direction
+
+```css
+display: flex;
+```
+
+Fügen wir also diese Deklaration dem CSS im Beispiel hinzu:
+
+<WebPlayground 
+  markup={
+`<div id="container">
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+  <div id="three" class="box"></div>
+</div>`    
+  } 
+  css={
+`.box { 
+  width: 80px;
+  height: 80px;
+}
+#one { background-color: cyan; }
+#two { background-color: magenta; }
+#three { background-color: orange; }
+#container {
+  display: flex;
+  height: 400px;
+  border: 3px solid green;
+}`    
+  } 
+  defaultEditorTab="css"
+/>
+
+
+Nun ist zu sehen, dass die drei Quadrate horizontal ausgerichtet werden.
+Für das Container-`div`-Element ist nun die FlexBox aktiv. Die Anordnung
+der Elemente innerhalb des FlexBox-Layouts orientiert sich an der Ausrichtung
+der sogenannten Hauptachse. Diese verläuft standardmäßig horizontal von
+links nach rechts. Die Ausrichtung der Hauptachse innerhalb der FlexBox
+wird mit der CSS-Eigenschaft `flex-direction` festgelegt. Der Wert `row`
+ist hierbei der Default-Wert einer FlexBox, wenn diese Eigenschaft nicht
+ausdrücklich gesetzt wird, so wie im Beispiel oben zu sehen.
+
+![Flex Direction Row](../../images/css/flex-direction-row.png)
+
+Mit dem Wert `column` für `flex-direction` erfolgt die Ausrichtung der
+Hauptachse von oben nach unten bzw. vertikal.
+
+![Flex Direction Column](../../images/css/flex-direction-column.png)
+
+<WebPlayground 
+  markup={
+`<div id="container">
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+  <div id="three" class="box"></div>
+</div>`    
+  } 
+  css={
+`.box { 
+  width: 80px;
+  height: 80px;
+}
+#one { background-color: cyan; }
+#two { background-color: magenta; }
+#three { background-color: orange; }
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  border: 3px solid green;
+}`    
+  } 
+  defaultEditorTab="css"
+/>
+
+In unserem Beispiel hat dies die Auswirkung, dass die drei Quadrate nun
+vertikal von oben nach unten angeordnet werden. Würde in dem obigen
+Beispiel der Wert für `flex-direction` wieder auf `row` gesetzt,
+dann würde die Anordnung der Quadrat wie zuvor ohne Angabe von `flex-direction`
+horizontal von links nach rechts ausfallen.
+
+Wie in den beiden Abbildungen zu sehen, gibt es neben der Hauptachse auch eine
+„Querachse“. Diese verläuft jeweils im rechten Winkel oder um 90˚ gedreht zur
+Hauptachse, abhängig von `flex-direction`.
+
+## Anordnung mit justify-content und align-items
+
+Mit den Eigenschaften `justify-content` und `align-items` kann die konkrete
+Anordnung der Elemente für die Hauptachse (`justify-content`) und Querachse
+(`align-item`) beeinflusst werden. Für beide Eigenschaften steht der Wert
+`center` bereit, mit dem die Elemente sowohl auf der Hauptachse also auch
+auf der Querachse zentriert angeordnet werden.
+
+Folgendes Beispiel zeigt die Kombination von `justify-content: space-around` und
+`align-items: center`:
+
+<WebPlayground 
+  markup={
+`<div id="container">
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+  <div id="three" class="box"></div>
+</div>`    
+  } 
+  css={
+`.box { 
+  width: 80px;
+  height: 80px;
+}
+#one { background-color: cyan; }
+#two { background-color: magenta; }
+#three { background-color: orange; }
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  border: 3px solid green;
+}`    
+  } 
+  defaultEditorTab="css"
+/>
+
+Einige Eigenschaften stehen für die Anordnung auf den beiden Achsen
+zur Verfügung, ein paar relevante Beispiele:
+
+- Hauptachse: `justify-content: center | space-between | space-around | space-evenly | flex-start | flex-end | …`
+- Querachse: `align-items: center | flex-start | flex-end | …`
+
+Die Verwendung des FlexBox-Layouts kann gut dadurch erlernt werden, wenn
+mit den verschiedenen Eigenschaften und Werten experimentiert wird, wozu
+sich das obige Beispiel gut eignet.
+
+## flex-wrap
+
+Ein weitere nützliche Eigenschaft des FlexBox-Layouts ist `flex-wrap`, womit
+ein automatischer Umbruch der enthaltenen Elemente auf die nächste Zeile bzw.
+Spalte erreicht werden kann. Sollten also die Elemente nicht auf die Hauptachse
+des umgebenden FlexBox-Containers passen, z.B. wenn die Webseite auf einem
+Smartphone betrachtet wird, dann kann mit folgender Deklaration erreicht werden,
+dass die Elemente sichtbar bleiben,
+da ein Umbruch am Ende der FlexBox erfolgt:
+
+```css
+flex-wrap: wrap;
+```
+
+## Ausblick
+
+Das FlexBox-Layout bietet noch einige weitere Konfigurationsmöglichkeiten an. Siehe dazu die Dokumentation im Mozilla Developer Network (MDN) [hier](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) und [hier](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout).
+
+Eine ähnlich mächtige Alternative zum FlexBox-Layout ist das [GridLayout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
+
+Mit der Eigenschaft `position` kann die Positionierung einzelner Elemente
+bestimmt werden, mehr dazu bei [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position).

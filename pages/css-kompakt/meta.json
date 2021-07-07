@@ -1,0 +1,14 @@
+{
+  "index": "Übersicht",
+  "intro": "Einleitung",
+  "lernressourcen":"Lernressoucen",
+  "regeln":"CSS Regeln",
+  "CSS-in-HTML":"CSS in HTML",
+  "html-und-css":"HTML und CSS",
+  "selektoren":"Selektoren",
+  "eigenschaften":"Eigenschaften in CSS",
+  "kaskade":"CSS Kaskade",
+  "box-model":"Das Box-Modell",
+  "layout":"Layout",
+  "frameworks":"Frameworks"
+}

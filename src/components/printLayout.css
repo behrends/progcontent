@@ -1,7 +1,0 @@
-@media print {
-  header,
-  footer,
-  div.prev-next-links {
-    display: none;
-  }
-}
