@@ -76,7 +76,17 @@ export default function Home() {
       </main>
 
       <footer className="flex items-center justify-center w-full h-12 border-t">
-        <span className="flex items-center justify-center">{`© ${new Date().getFullYear()} Erik Behrends`}</span>
+        <span className="flex items-center justify-center">
+          <span>{`© ${new Date().getFullYear()}`}</span>
+          <a
+            rel="author"
+            href="https://www.behrends.io"
+            target="_blank"
+            className="ml-8"
+          >
+            Erik Behrends
+          </a>
+        </span>
         <a className="ml-8" href="/impressum">
           Impressum
         </a>

@@ -18,11 +18,21 @@ export default {
         <a
           rel="license"
           href="https://creativecommons.org/licenses/by-nc/4.0/"
+          target="_blank"
         >
           CC BY-NC 4.0
         </a>
       </abbr>
-      <span>{`© ${new Date().getFullYear()} Erik Behrends`}</span>
+      <span>
+        {`© ${new Date().getFullYear()} `}
+        <a
+          rel="author"
+          href="https://www.behrends.io"
+          target="_blank"
+        >
+          Erik Behrends
+        </a>
+      </span>
       <a href="/impressum" style={{ marginLeft: '10px' }}>
         Impressum
       </a>
