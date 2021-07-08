@@ -22,5 +22,10 @@
   "js-for-react": {
     "title": "JS→React",
     "type": "nav"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "type": "nav",
+    "hidden": true
   }
 }
