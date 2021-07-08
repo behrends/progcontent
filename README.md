@@ -10,7 +10,7 @@ Built with [NextJS](https://nextjs.org/) and [Nextra](https://nextra.vercel.app/
 
 ### Content
 
-[CC BY NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
           
 

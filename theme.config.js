@@ -19,7 +19,7 @@ export default {
           rel="license"
           href="https://creativecommons.org/licenses/by-nc/4.0/"
         >
-          CC BY NC 4.0
+          CC BY-NC 4.0
         </a>
       </abbr>
       <span>{`© ${new Date().getFullYear()} Erik Behrends`}</span>
