@@ -1,17 +1,16 @@
 export default {
-  repository: 'https://github.com/behrends/progcontent', // project repo
-  docsRepository: 'https://github.com/behrends/progcontent', // docs repo
-  branch: 'main', // branch of docs
-  path: '/', // path of docs
+  github: 'https://github.com/behrends/progcontent', // project repo
+  docsRepositoryBase: 'https://github.com/behrends/progcontent', // docs repo
   titleSuffix: ' – Prog Content',
   nextLinks: true,
   prevLinks: true,
   search: true,
-  customSearch: null, // customizable, you can use algolia for example
   darkMode: true,
+  defaultMenuCollapsed: false,
+  font: true,
   footer: true,
   footerText: `© ${new Date().getFullYear()} Erik Behrends.`,
-  footerEditOnGitHubLink: true, // will link to the docs repo
+  footerEditLink: 'Diese Seite bearbeiten.',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">
