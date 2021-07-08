@@ -1,5 +1,9 @@
-const withNextra = require('nextra')('nextra-theme-docs', './theme.config.js')
-module.exports = withNextra()
+const withNextra = require('nextra')({
+  theme: 'nextra-theme-docs',
+  themeConfig: './theme.config.js',
+  unstable_stork: true,
+});
+module.exports = withNextra();
 // server side rendering on netlify
 // https://docs.netlify.com/configure-builds/common-configurations/next-js/
-module.exports.target = "serverless"
+module.exports.target = 'serverless';

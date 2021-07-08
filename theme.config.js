@@ -5,6 +5,7 @@ export default {
   nextLinks: true,
   prevLinks: true,
   search: true,
+  unstable_stork: true,
   darkMode: true,
   defaultMenuCollapsed: false,
   font: true,
