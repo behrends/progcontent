@@ -1,7 +1,7 @@
 export default {
   github: 'https://github.com/behrends/progcontent', // project repo
   docsRepositoryBase: 'https://github.com/behrends/progcontent', // docs repo
-  titleSuffix: ' – Prog Content',
+  titleSuffix: '',
   nextLinks: true,
   prevLinks: true,
   search: true,
@@ -11,16 +11,7 @@ export default {
   footer: true,
   footerText: `© ${new Date().getFullYear()} Erik Behrends.`,
   footerEditLink: 'Diese Seite bearbeiten.',
-  logo: (
-    <>
-      <span className="mr-2 font-extrabold hidden md:inline">
-        Prog Content
-      </span>
-      <span className="text-gray-600 font-normal hidden md:inline">
-        Interaktive Kurse zum Programmieren
-      </span>
-    </>
-  ),
+  logo: <span className="font-extrabold">Prog Content</span>,
   head: (
     <>
       <meta
