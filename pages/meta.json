@@ -1,8 +1,26 @@
 {
-  "prog-lernen-js": "Programmieren lernen",
-  "git-einstieg": "Einstieg in git",
-  "html-kompakt": "HTML kompakt",
-  "css-kompakt": "CSS kompakt",
-  "js-from-java": "Java → JavaScript",
-  "js-for-react": "JavaScript für React"
+  "prog-lernen-js": {
+    "title": "ProgJS",
+    "type": "nav"
+  },
+  "git-einstieg": {
+    "title": "git",
+    "type": "nav"
+  },
+  "html-kompakt": {
+    "title": "HTML",
+    "type": "nav"
+  },
+  "css-kompakt": {
+    "title": "CSS",
+    "type": "nav"
+  },
+  "js-from-java": {
+    "title": "Java→JS",
+    "type": "nav"
+  },
+  "js-for-react": {
+    "title": "JS→React",
+    "type": "nav"
+  }
 }
