@@ -17,6 +17,7 @@ const Quiz = ({ question, answer }) => {
         id="answerText"
         type="text"
         placeholder="Antwort"
+        className="p-1 border-2 drop-shadow-sm w-1/3 dark:border-yellow-200"
       ></input>
       <button
         onClick={() => checkAnswer(answer)}
