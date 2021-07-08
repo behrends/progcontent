@@ -1,4 +1,4 @@
-import Quiz from "../../components/quiz"
+import Quiz from "../../components/SimpleQuiz"
 
 # Variablen und Konstanten
 

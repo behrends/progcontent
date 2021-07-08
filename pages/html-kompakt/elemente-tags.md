@@ -1,6 +1,6 @@
 # Elemente und Tags
 
-import MultipleChoice from "../../components/multiple-choice"
+import MultipleChoice from "../../components/MultipleChoice"
 
 Ein HTML-Dokument ist ein Text-Dokument, das einerseits aus den darzustellenden Inhalten
 (Text, Links, usw.) besteht und andererseits bestimmte Elemente zur Auszeichnung
