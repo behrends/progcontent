@@ -13,15 +13,15 @@ export default {
   footerText: (
     <span>
       <abbr
-        title="Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Nicht kommerziell 4.0 International Lizenz."
+        title="Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz."
         style={{ cursor: 'help', marginRight: '10px' }}
       >
         <a
           rel="license"
-          href="https://creativecommons.org/licenses/by-nc/4.0/"
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
           target="_blank"
         >
-          CC BY-NC 4.0
+          CC BY-NC-SA 4.0
         </a>
       </abbr>
       <span>
