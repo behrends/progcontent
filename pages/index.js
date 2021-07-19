@@ -14,7 +14,7 @@ export default function Home() {
         <title>Prog Content</title>
         <meta
           name="description"
-          content="Interaktive Kurse zum Programmieren"
+          content="Eigenständig Programmieren lernen mit interaktiven Kursen"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -23,7 +23,7 @@ export default function Home() {
         <h1 className="text-6xl font-bold">Prog Content</h1>
 
         <p className="mt-3 text-2xl">
-          Interaktive Kurse zum Programmieren
+          Eigenständig Programmieren lernen mit interaktiven Kursen
         </p>
 
         <div className="flex flex-wrap items-center justify-around max-w-full mt-6 sm:w-full">
