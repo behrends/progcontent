@@ -50,11 +50,11 @@ export default {
       />
       <meta
         name="description"
-        content="Prog Content - Interaktive Kurse zum Programmieren"
+        content="Prog Content - Eigenständig Programmieren lernen mit interaktiven Kursen"
       />
       <meta
         name="og:title"
-        content="Prog Content - Interaktive Kurse zum Programmieren"
+        content="Prog Content - Eigenständig Programmieren lernen mit interaktiven Kursen"
       />
     </>
   ),
