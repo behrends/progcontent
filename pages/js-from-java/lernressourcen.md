@@ -13,6 +13,7 @@ eine kleine Auswahl zu sehen.
 Zum Teil bieten diese Webseiten weitere Themen außer JavaScript an.
 
 - [javascript.info](https://javascript.info)
+- [wesbos.com/javascript](https://wesbos.com/javascript)
 - [freeCodeCamp.org](https://www.freecodecamp.org)
 - [The Odin Project (https://www.theodinproject.com)](https://www.theodinproject.com)
 
