@@ -118,20 +118,16 @@ Obiges HTML-Fragment erscheint wie folgt im Browser:
 
 <div>
 <label>      
-  <input style={{marginRight: "3px"}} type="checkbox" name="pizza" value="olives"/>
-  Oliven&nbsp;&nbsp;&nbsp;
+  <input style={{marginRight: "3px"}} type="checkbox" name="pizza" value="olives"/> Oliven&nbsp;&nbsp;&nbsp;
 </label>
 <label>      
-  <input style={{marginRight: "3px"}} type="checkbox" name="pizza" value="artichokes"/>
-  Artischocken&nbsp;&nbsp;&nbsp;
+  <input style={{marginRight: "3px"}} type="checkbox" name="pizza" value="artichokes"/> Artischocken&nbsp;&nbsp;&nbsp;
 </label>
 <label>      
-  <input style={{marginRight: "3px"}} type="checkbox" name="pizza" value="champignons"/>
-  Champignons&nbsp;&nbsp;&nbsp;
+  <input style={{marginRight: "3px"}} type="checkbox" name="pizza" value="champignons"/> Champignons&nbsp;&nbsp;&nbsp;
 </label>
 <label>      
-  <input style={{marginRight: "3px"}} type="checkbox" name="pizza" value="spinach"/>
-  Spinat&nbsp;&nbsp;&nbsp;
+  <input style={{marginRight: "3px"}} type="checkbox" name="pizza" value="spinach"/> Spinat&nbsp;&nbsp;&nbsp;
 </label>
 </div>
 
@@ -162,16 +158,13 @@ Dazu die Darstellung im Browser:
 
 <div>
 <label>
-  <input style={{marginRight: "3px"}} type="radio" name="chili" value="mild" />
-  Mild&nbsp;&nbsp;&nbsp;
+  <input style={{marginRight: "3px"}} type="radio" name="chili" value="mild" /> Mild&nbsp;&nbsp;&nbsp;
 </label>
 <label>
-  <input style={{marginRight: "3px"}} type="radio" name="chili" value="hot" />
-  Scharf&nbsp;&nbsp;&nbsp;
+  <input style={{marginRight: "3px"}} type="radio" name="chili" value="hot" /> Scharf&nbsp;&nbsp;&nbsp;
 </label>
 <label>
-  <input style={{marginRight: "3px"}} type="radio" name="chili" value="very hot" />
-  Sehr Scharf&nbsp;&nbsp;&nbsp;
+  <input style={{marginRight: "3px"}} type="radio" name="chili" value="very hot" /> Sehr Scharf&nbsp;&nbsp;&nbsp;
 </label>
 </div>
 
@@ -201,14 +194,8 @@ gewählt werden. Dazu gibt es in HTML das Element `select` mit den einzelnen
 Dieses Beispiel erscheint im Browser so:
 
 <label>
-  Wie schnell war die Lieferung?
-  <select name="feedback">
-    <option value="">Bitte wählen</option>
-    <option value="veryfast">Superschnell</option>
-    <option value="fast">Schnell</option>
-    <option value="slow">Langsam</option>
-    <option value="tooslow">Zu langsam</option>
-  </select>
+ Wie schnell war die Lieferung?
+  <select name="feedback"> <option value="">Bitte wählen</option> <option value="veryfast">Superschnell</option> <option value="fast">Schnell</option> <option value="slow">Langsam</option> <option value="tooslow">Zu langsam</option> </select>
 </label>
 
 ## Buttons Für die Bestätigung der Eingabe und die
@@ -221,18 +208,11 @@ mit `type="submit"`:
 <input type="submit" value="Abschicken" />
 ```
 
-Die Beschriftung des Buttons wird im Attribut `value` deklariert. Dies ergibt
-folgende Darstellung:
-
-<input type="submit" value="Abschicken"/>
-
-Oder als `button`-Element mit der Beschriftung als Textinhalt des Elements:
+Die Beschriftung des Buttons wird im Attribut `value` deklariert. Die Darstellung ähnelt der eines Buttons. Alternativ gibt es auch ein `button`-Element mit der Beschriftung als Textinhalt des Elements:
 
 ```html
 <button>Fertig</button>
 ```
-
-<button>Fertig</button>
 
 Es gibt noch zahlreiche weitere Möglichkeiten, Benutzereingaben im Browser mit
 HTML-Formularen zu ermitteln, siehe die Referenz zu [Formularelementen bei MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Forms).
