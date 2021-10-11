@@ -14,6 +14,7 @@ eine kleine Auswahl zu sehen.
 Zum Teil bieten diese Webseiten weitere Themen außer CSS an.
 
 - [freeCodeCamp.org](https://www.freecodecamp.org)
+- [Learn CSS bei web.dev von Google](https://web.dev/learn/css/)
 - [internetingishard.com](https://internetingishard.com)
 - [The Odin Project (www.theodinproject.com)](https://www.theodinproject.com)
 - [Learn to Code HTML & CSS by Shay Howe (learn.shayhowe.com)](http://learn.shayhowe.com)
