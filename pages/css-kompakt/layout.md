@@ -183,7 +183,7 @@ sich das obige Beispiel gut eignet.
 
 ## flex-wrap
 
-Ein weitere nützliche Eigenschaft des FlexBox-Layouts ist `flex-wrap`, womit
+Eine weitere nützliche Eigenschaft des FlexBox-Layouts ist `flex-wrap`, womit
 ein automatischer Umbruch der enthaltenen Elemente auf die nächste Zeile bzw.
 Spalte erreicht werden kann. Sollten also die Elemente nicht auf die Hauptachse
 des umgebenden FlexBox-Containers passen, z.B. wenn die Webseite auf einem
