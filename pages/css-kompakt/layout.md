@@ -136,7 +136,7 @@ Hauptachse, abhängig von `flex-direction`.
 
 Mit den Eigenschaften `justify-content` und `align-items` kann die konkrete
 Anordnung der Elemente für die Hauptachse (`justify-content`) und Querachse
-(`align-item`) beeinflusst werden. Für beide Eigenschaften steht der Wert
+(`align-items`) beeinflusst werden. Für beide Eigenschaften steht der Wert
 `center` bereit, mit dem die Elemente sowohl auf der Hauptachse also auch
 auf der Querachse zentriert angeordnet werden.
 
