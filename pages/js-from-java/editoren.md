@@ -25,5 +25,5 @@ haben insbesondere eine interaktive JavaScript-Konsole.
 - [StackBlitz (https://stackblitz.com)](https://stackblitz.com)
 - [Repl.it (https://repl.it)](https://repl.it)
 - [Codepen (https://codepen.io)](https://codepen.io)
-- [VS Code online (https://visualstudio.microsoft.com/services/visual-studio-online)](https://visualstudio.microsoft.com/services/visual-studio-online/)
+- [VS Code online (https://vscode.dev)](https://vscode.dev)
 - u.v.a.m.
