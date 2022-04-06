@@ -1,31 +1,31 @@
 {
   "prog-lernen-js": {
     "title": "ProgJS",
-    "type": "nav"
+    "type": "page"
   },
   "git-einstieg": {
     "title": "git",
-    "type": "nav"
+    "type": "page"
   },
   "html-kompakt": {
     "title": "HTML",
-    "type": "nav"
+    "type": "page"
   },
   "css-kompakt": {
     "title": "CSS",
-    "type": "nav"
+    "type": "page"
   },
   "js-from-java": {
     "title": "Java→JS",
-    "type": "nav"
+    "type": "page"
   },
   "js-for-react": {
     "title": "JS→React",
-    "type": "nav"
+    "type": "page"
   },
   "impressum": {
     "title": "Impressum",
-    "type": "nav",
+    "type": "page",
     "hidden": true
   }
 }

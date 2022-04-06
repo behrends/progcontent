@@ -8,9 +8,12 @@ export default {
   unstable_stork: false,
   darkMode: true,
   defaultMenuCollapsed: false,
+  feedbackLink: () => 'Fragen / Rückmeldung auf GitHub →',
+  feedbackLabels: 'feedback',
   floatTOC: true,
   font: true,
   footer: true,
+  footerEditLink: 'Diese Seite bei GitHub →',
   footerText: (
     <span>
       <abbr
@@ -40,8 +43,6 @@ export default {
       </a>
     </span>
   ),
-  // footerText: `© ${new Date().getFullYear()} Erik Behrends.`,
-  footerEditLink: 'Diese Seite bearbeiten.',
   logo: <span className="font-extrabold">Prog Content</span>,
   head: (
     <>
