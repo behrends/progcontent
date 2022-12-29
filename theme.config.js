@@ -1,5 +1,6 @@
 export default {
-  docsRepositoryBase: 'https://github.com/behrends/progcontent',
+  docsRepositoryBase:
+    'https://github.com/behrends/progcontent/tree/main',
   editLink: {
     text: 'Diese Seite bei GitHub →',
   },
