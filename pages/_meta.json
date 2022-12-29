@@ -26,6 +26,6 @@
   "impressum": {
     "title": "Impressum",
     "type": "page",
-    "hidden": true
+    "display": "hidden"
   }
 }
