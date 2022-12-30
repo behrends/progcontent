@@ -1,34 +1,16 @@
 import { useEffect, useRef } from 'react';
+import { EditorView, basicSetup } from 'codemirror';
 import { EditorState } from '@codemirror/state';
-import {
-  EditorView,
-  highlightActiveLine,
-  keymap,
-} from '@codemirror/view';
-import { defaultKeymap } from '@codemirror/commands';
-import { lineNumbers } from '@codemirror/gutter';
-import { defaultHighlightStyle } from '@codemirror/highlight';
-import { bracketMatching } from '@codemirror/matchbrackets';
+import { keymap } from '@codemirror/view';
 import { javascript } from '@codemirror/lang-javascript';
 
-export default function CodeMirror() {
+export default function CodeMirror({ code = '// JavaScript code' }) {
   const editor = useRef(null);
 
   useEffect(() => {
     const state = EditorState.create({
-      doc: `// Hello JavaScript!
-1 + 3;
-console.log('Hey!');`,
-      extensions: [
-        defaultHighlightStyle,
-        highlightActiveLine(),
-        lineNumbers(),
-        bracketMatching(),
-        javascript(),
-        EditorState.phrases.of(germanPhrases),
-        keymap.of(defaultKeymap),
-        runKeymap(),
-      ],
+      doc: code,
+      extensions: [basicSetup, javascript(), execCodeKeymap()],
     });
     const view = new EditorView({ state, parent: editor.current });
     let console = window.console;
@@ -51,47 +33,16 @@ console.log('Hey!');`,
   );
 }
 
-function runKeymap() {
+function execCodeKeymap() {
   return keymap.of([
     {
-      key: 'Mod-Enter',
+      key: 'Shift-Enter',
       run(editorView) {
         document.getElementById('output').innerText = '';
         let val = editorView.state.doc.toString();
-        let output = new Function(val)();
+        new Function(val)();
         return true;
       },
     },
   ]);
 }
-
-// taken from https://codemirror.net/6/examples/translate/
-const germanPhrases = {
-  // @codemirror/view
-  'Control character': 'Steuerzeichen',
-  // @codemirror/fold
-  'Folded lines': 'Eingeklappte Zeilen',
-  'Unfolded lines': 'Ausgeklappte Zeilen',
-  to: 'bis',
-  'folded code': 'eingeklappter Code',
-  unfold: 'ausklappen',
-  'Fold line': 'Zeile einklappen',
-  'Unfold line': 'Zeile ausklappen',
-  // @codemirror/search
-  'Go to line': 'Springe zu Zeile',
-  go: 'OK',
-  Find: 'Suchen',
-  Replace: 'Ersetzen',
-  next: 'nächste',
-  previous: 'vorherige',
-  all: 'alle',
-  'match case': 'groß/klein beachten',
-  replace: 'ersetzen',
-  'replace all': 'alle ersetzen',
-  close: 'schließen',
-  'current match': 'aktueller Treffer',
-  'on line': 'auf Zeile',
-  // @codemirror/lint
-  Diagnostics: 'Diagnosen',
-  'No diagnostics': 'Keine Diagnosen',
-};
