@@ -23,7 +23,7 @@ export default function Home() {
         <h1 className="text-6xl font-bold">Prog Content</h1>
 
         <p className="mt-3 text-2xl">
-          Eigenständig Programmieren lernen mit interaktiven Kursen
+          Programmieren lernen mit interaktiven Kursen
         </p>
 
         <div className="flex flex-wrap items-center justify-around max-w-full mt-6 sm:w-full">
